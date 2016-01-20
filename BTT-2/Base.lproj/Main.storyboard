@@ -10,13 +10,26 @@
         <scene sceneID="4c1-UA-of4">
             <objects>
                 <viewController id="VAl-3S-hEX" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coming-Soon.png" id="cbZ-ZE-lKm">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eIU-Uc-q3b"/>
+                        <viewControllerLayoutGuide type="bottom" id="crl-9B-wXi"/>
+                    </layoutGuides>
+                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="UG1-IL-nQc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                        </accessibility>
-                    </imageView>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coming-Soon.png" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-0P-qFu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-mC-rNO">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="d50-QP-WuK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNP-ok-DG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -625,7 +638,8 @@
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PRy-SN-tl0"/>
+        <segue reference="hmA-lb-rnh"/>
         <segue reference="npM-U3-l4t"/>
+        <segue reference="d50-QP-WuK"/>
     </inferredMetricsTieBreakers>
 </document>

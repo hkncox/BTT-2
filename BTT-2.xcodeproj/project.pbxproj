@@ -14,6 +14,8 @@
 		54BB87DB1C4C3C1800DADA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BB87D91C4C3C1800DADA1E /* LaunchScreen.storyboard */; };
 		54BB87E61C4C3C1800DADA1E /* BTT_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87E51C4C3C1800DADA1E /* BTT_2Tests.swift */; };
 		54BB87F11C4C3C1800DADA1E /* BTT_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87F01C4C3C1800DADA1E /* BTT_2UITests.swift */; };
+		5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */; };
+		5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		54BB87EC1C4C3C1800DADA1E /* BTT-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTT-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BB87F01C4C3C1800DADA1E /* BTT_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTT_2UITests.swift; sourceTree = "<group>"; };
 		54BB87F21C4C3C1800DADA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
+		5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		54BB87CF1C4C3C1800DADA1E /* BTT-2 */ = {
 			isa = PBXGroup;
 			children = (
+				5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */,
+				5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */,
 				54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */,
 				54BB87D21C4C3C1800DADA1E /* ViewController.swift */,
 				54BB87D41C4C3C1800DADA1E /* Main.storyboard */,
@@ -232,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */,
+				5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */,
 				54BB87DB1C4C3C1800DADA1E /* LaunchScreen.storyboard in Resources */,
 				54BB87D81C4C3C1800DADA1E /* Assets.xcassets in Resources */,
 				54BB87D61C4C3C1800DADA1E /* Main.storyboard in Resources */,
@@ -487,6 +495,7 @@
 				54BB87F71C4C3C1800DADA1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54BB87F81C4C3C1800DADA1E /* Build configuration list for PBXNativeTarget "BTT-2Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				54BB87FA1C4C3C1800DADA1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54BB87FB1C4C3C1800DADA1E /* Build configuration list for PBXNativeTarget "BTT-2UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				54BB87FD1C4C3C1800DADA1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

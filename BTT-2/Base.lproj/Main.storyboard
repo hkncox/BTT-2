@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Coming-Soon.png" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-0P-qFu">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="524"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-mC-rNO">
-                                <rect key="frame" x="0.0" y="524" width="600" height="76"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <animations/>
                                 <state key="normal" title="Home"/>
                                 <connections>
@@ -313,7 +313,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-cB-YtQ">
-                                <rect key="frame" x="41" y="202" width="149" height="278"/>
+                                <rect key="frame" x="41" y="224" width="149" height="278"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-9v-fLF">
                                         <rect key="frame" x="62" y="0.0" width="88" height="21"/>
@@ -396,7 +396,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="lhI-OS-Y2g">
-                                <rect key="frame" x="265" y="204" width="150" height="276"/>
+                                <rect key="frame" x="265" y="226" width="150" height="276"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-MG-OBK">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -453,8 +453,8 @@
                                     <constraint firstAttribute="width" constant="150" id="ySz-sE-M2P"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T66-W4-UUY">
-                                <rect key="frame" x="200" y="530" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T66-W4-UUY">
+                                <rect key="frame" x="351" y="542" width="64" height="30"/>
                                 <animations/>
                                 <accessibility key="accessibilityConfiguration" label="button_signUp"/>
                                 <state key="normal" title="Purchase"/>
@@ -463,23 +463,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-5D-KwX">
-                                <rect key="frame" x="362" y="39" width="42" height="30"/>
+                                <rect key="frame" x="483" y="20" width="42" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <segue destination="tHk-ti-3dI" kind="show" id="npM-U3-l4t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6K-Ms-ikH">
+                                <rect key="frame" x="56" y="542" width="48" height="30"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" label="button_signUp"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="TUl-5R-u9a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eAS-FP-cqh" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" id="5TI-Yc-CIH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eAS-FP-cqh" secondAttribute="trailing" id="GGK-IE-809"/>
+                            <constraint firstItem="eAS-FP-cqh" firstAttribute="centerX" secondItem="oLq-40-uh4" secondAttribute="centerX" id="9Ue-Q7-KKk"/>
+                            <constraint firstItem="k6K-Ms-ikH" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" constant="15" id="J8V-YP-oJT"/>
                             <constraint firstItem="DMJ-cB-YtQ" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" id="RnP-1q-hFm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e7s-4P-kue" secondAttribute="trailing" id="a3s-D3-ZRR"/>
+                            <constraint firstItem="ftS-hC-Xka" firstAttribute="top" secondItem="T66-W4-UUY" secondAttribute="bottom" constant="15" id="aS1-fU-bce"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lhI-OS-Y2g" secondAttribute="trailing" id="e19-2g-qpG"/>
+                            <constraint firstItem="e7s-4P-kue" firstAttribute="centerX" secondItem="oLq-40-uh4" secondAttribute="centerX" id="iJL-9w-Z6w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T66-W4-UUY" secondAttribute="trailing" constant="15" id="ipU-gE-aS8"/>
                             <constraint firstItem="e7s-4P-kue" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" id="kYo-ut-mVH"/>
+                            <constraint firstItem="ftS-hC-Xka" firstAttribute="top" secondItem="k6K-Ms-ikH" secondAttribute="bottom" constant="15" id="p8a-ID-FUH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -720,8 +733,8 @@
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ev4-7z-Xii"/>
-        <segue reference="YbO-Ni-tcK"/>
-        <segue reference="hmA-lb-rnh"/>
+        <segue reference="TUl-5R-u9a"/>
+        <segue reference="PRy-SN-tl0"/>
+        <segue reference="npM-U3-l4t"/>
     </inferredMetricsTieBreakers>
 </document>

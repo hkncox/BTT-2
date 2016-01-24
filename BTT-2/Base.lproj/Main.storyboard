@@ -282,10 +282,10 @@
             </objects>
             <point key="canvasLocation" x="237" y="456"/>
         </scene>
-        <!--View Controller-->
+        <!--User-->
         <scene sceneID="MN1-g5-kWI">
             <objects>
-                <viewController id="3ty-f9-OOi" sceneMemberID="viewController">
+                <viewController id="3ty-f9-OOi" customClass="User" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zvi-5a-uQN"/>
                         <viewControllerLayoutGuide type="bottom" id="ftS-hC-Xka"/>
@@ -495,6 +495,15 @@
                             <constraint firstItem="ftS-hC-Xka" firstAttribute="top" secondItem="k6K-Ms-ikH" secondAttribute="bottom" constant="15" id="p8a-ID-FUH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="text_confirmPassword" destination="ZQd-2L-ji5" id="H8f-Wh-n0W"/>
+                        <outlet property="text_confirmUserName" destination="0ZW-fw-DhI" id="5FS-qC-2QM"/>
+                        <outlet property="text_createPassword" destination="Pfm-8Q-miN" id="mZo-yY-Qux"/>
+                        <outlet property="text_createUserName" destination="KWb-Dq-wRE" id="aen-3i-ZMb"/>
+                        <outlet property="text_email" destination="9FJ-OG-XNb" id="wLk-Pz-JHQ"/>
+                        <outlet property="text_firstName" destination="TCH-MG-OBK" id="J7e-yg-RZ0"/>
+                        <outlet property="text_lastName" destination="2pF-n0-6Fi" id="34W-Jg-dNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLr-NC-DLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

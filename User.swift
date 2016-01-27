@@ -22,7 +22,13 @@ class User: UIViewController
     @IBOutlet var text_createUserName: UITextField!
     @IBOutlet var text_confirmUserName: UITextField!
     @IBOutlet var text_createPassword: UITextField!
+
     @IBOutlet var text_confirmPassword: UITextField!
+    @IBOutlet var button_signUp: UIButton?
+    @IBAction func buttonTapped(button_signUp: UIButton)
+    {
+        validate(text_firstName.text: String, text_lastName.text: String, text_createUserName.text: <#T##String#>, text_confirmUserName.text: <#T##String#>, text_createPassword.text: String, text_confirmPassword.text: String, text_email.text: <#T##String#>)
+    }
     func User(_firstName: String, _lastName: String, _userName: String, _password: String, _email: String)
     {
         firstName = _firstName;
@@ -31,7 +37,7 @@ class User: UIViewController
         password = _password;
         email = _email;
     }
-    func validate(_firstName: String, _lastName: String, _userName: String, _password: String, _email: String)
+    func validate(_firstName: String, _lastName: String, _createUserName: String, _confirmUserName: String, _createPassword: String, _confirmPassword: String, _email: String)
     {
         if !(isValidEmail(text_email.text!))
         {

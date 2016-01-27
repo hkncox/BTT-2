@@ -578,9 +578,6 @@
                                 <animations/>
                                 <accessibility key="accessibilityConfiguration" label="button_signUp"/>
                                 <state key="normal" title="Purchase"/>
-                                <connections>
-                                    <segue destination="VAl-3S-hEX" kind="show" id="PRy-SN-tl0"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-5D-KwX">
                                 <rect key="frame" x="483" y="20" width="42" height="30"/>
@@ -616,6 +613,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button_signUp" destination="T66-W4-UUY" id="0IZ-XR-5dc"/>
                         <outlet property="text_confirmPassword" destination="ZQd-2L-ji5" id="H8f-Wh-n0W"/>
                         <outlet property="text_confirmUserName" destination="0ZW-fw-DhI" id="5FS-qC-2QM"/>
                         <outlet property="text_createPassword" destination="Pfm-8Q-miN" id="mZo-yY-Qux"/>
@@ -1350,6 +1348,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="npM-U3-l4t"/>
         <segue reference="TUl-5R-u9a"/>
-        <segue reference="PRy-SN-tl0"/>
+        <segue reference="hmA-lb-rnh"/>
     </inferredMetricsTieBreakers>
 </document>

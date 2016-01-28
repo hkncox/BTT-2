@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		240D8E501C599E1700A19D47 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 240D8E4F1C599E1700A19D47 /* img */; };
-		240D8E521C599E8700A19D47 /* video in Resources */ = {isa = PBXBuildFile; fileRef = 240D8E511C599E8700A19D47 /* video */; };
+		240D8E541C599FA300A19D47 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 240D8E531C599FA300A19D47 /* img */; };
+		240D8E561C599FB300A19D47 /* video in Resources */ = {isa = PBXBuildFile; fileRef = 240D8E551C599FB300A19D47 /* video */; };
 		5462088B1C504C9000B72800 /* Tongue Thrust Logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5462088A1C504C9000B72800 /* Tongue Thrust Logo2.jpg */; };
 		54BB87D11C4C3C1800DADA1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */; };
 		54BB87D61C4C3C1800DADA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BB87D41C4C3C1800DADA1E /* Main.storyboard */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		240D8E4F1C599E1700A19D47 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../Desktop/img; sourceTree = "<group>"; };
-		240D8E511C599E8700A19D47 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; name = video; path = ../../Desktop/video; sourceTree = "<group>"; };
+		240D8E531C599FA300A19D47 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../../Desktop/img; sourceTree = "<group>"; };
+		240D8E551C599FB300A19D47 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; name = video; path = ../../../Desktop/video; sourceTree = "<group>"; };
 		5462088A1C504C9000B72800 /* Tongue Thrust Logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Tongue Thrust Logo2.jpg"; path = "../../BTT/BTT/Assets.xcassets/Tongue Thrust Logo2.imageset/Tongue Thrust Logo2.jpg"; sourceTree = "<group>"; };
 		54BB87CD1C4C3C1800DADA1E /* BTT-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTT-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +87,6 @@
 		54BB87C41C4C3C1800DADA1E = {
 			isa = PBXGroup;
 			children = (
-				240D8E511C599E8700A19D47 /* video */,
-				240D8E4F1C599E1700A19D47 /* img */,
 				54BCD1E41C5557AF00B14AD9 /* User.swift */,
 				54BB87CF1C4C3C1800DADA1E /* BTT-2 */,
 				54BB87E41C4C3C1800DADA1E /* BTT-2Tests */,
@@ -110,6 +108,8 @@
 		54BB87CF1C4C3C1800DADA1E /* BTT-2 */ = {
 			isa = PBXGroup;
 			children = (
+				240D8E551C599FB300A19D47 /* video */,
+				240D8E531C599FA300A19D47 /* img */,
 				5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */,
 				5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */,
 				5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */,
@@ -249,9 +249,9 @@
 			files = (
 				5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */,
 				5462088B1C504C9000B72800 /* Tongue Thrust Logo2.jpg in Resources */,
-				240D8E501C599E1700A19D47 /* img in Resources */,
+				240D8E541C599FA300A19D47 /* img in Resources */,
 				5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */,
-				240D8E521C599E8700A19D47 /* video in Resources */,
+				240D8E561C599FB300A19D47 /* video in Resources */,
 				5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */,
 				54BB87D81C4C3C1800DADA1E /* Assets.xcassets in Resources */,
 				54BB87D61C4C3C1800DADA1E /* Main.storyboard in Resources */,

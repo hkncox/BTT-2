@@ -538,6 +538,9 @@
                                         <accessibility key="accessibilityConfiguration" label="text_email"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailTextFieldSelected:" destination="3ty-f9-OOi" eventType="touchDown" id="WyV-t4-f17"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose a username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWb-Dq-wRE">
                                         <rect key="frame" x="0.0" y="123" width="150" height="30"/>

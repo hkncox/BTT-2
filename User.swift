@@ -25,6 +25,11 @@ class User: UIViewController
 
     @IBOutlet var text_confirmPassword: UITextField!
     @IBOutlet var button_signUp: UIButton?
+  //  self.text_email.keyboardType = UIKeyboardType.EmailAddress
+    @IBAction func emailTextFieldSelected(sender: AnyObject)
+    {
+        text_email.keyboardType = UIKeyboardType.EmailAddress
+    }
     @IBAction func buttonTapped(button_signUp: UIButton)
     {
        /*  validate(text_firstName.text?, _lastName: text_lastName.text?, _createUserName: text_createUserName.text!, _confirmUserName: text_confirmUserName.text!, _createPassword: text_createPassword.text!, _confirmPassword: text_confirmPassword.text!, _email: text_email.text!)*/
@@ -65,7 +70,7 @@ class User: UIViewController
         
     }
     @IBAction func dismissKeyboard(sender: AnyObject){
-        textField.resignFirstResponder()
+        text_confirmPassword.resignFirstResponder()
     }
 
 }

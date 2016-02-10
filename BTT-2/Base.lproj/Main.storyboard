@@ -617,7 +617,7 @@
                                 <rect key="frame" x="25" y="99" width="555" height="414"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9dY-C9-9SC" customClass="LearnMoreExpandingCell" customModule="BTT_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9dY-C9-9SC" customClass="ExpandingCell" customModule="BTT_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="555" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9dY-C9-9SC" id="TWG-aI-XwO">
@@ -625,21 +625,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="plT-ms-vyp" customClass="LearnMoreExpandingCell" customModule="BTT_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="plT-ms-vyp" customClass="ExpandingCell" customModule="BTT_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="555" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="plT-ms-vyp" id="sV0-zV-X5W">
                                             <rect key="frame" x="0.0" y="0.0" width="555" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="ExpandingCell"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gMd-hC-ObW" customClass="LearnMoreExpandingCell" customModule="BTT_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gMd-hC-ObW" customClass="ExpandingCell" customModule="BTT_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="555" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gMd-hC-ObW" id="ygz-6k-bb3">
                                             <rect key="frame" x="0.0" y="0.0" width="555" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="ExpandingCell"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0xu-O8-Fhk">
                                         <rect key="frame" x="0.0" y="160" width="555" height="44"/>
@@ -648,6 +650,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="555" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="ExpandingCell"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AHO-hY-t5n">
                                         <rect key="frame" x="0.0" y="204" width="555" height="44"/>
@@ -1252,7 +1255,7 @@
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TUl-5R-u9a"/>
+        <segue reference="nQY-QZ-DVI"/>
         <segue reference="npM-U3-l4t"/>
         <segue reference="hmA-lb-rnh"/>
     </inferredMetricsTieBreakers>

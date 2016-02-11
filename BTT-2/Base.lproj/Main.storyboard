@@ -751,6 +751,10 @@ Ankyloglossia (tongue tied)</string>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1600"/>
+                    <connections>
+                        <outlet property="ScrollView" destination="cAP-bS-w5N" id="nt1-wp-XNb"/>
+                        <outlet property="view" destination="cAP-bS-w5N" id="Tqr-sY-hOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2c-oS-w1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

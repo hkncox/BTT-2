@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		246C8BA81C6BFFE900A899B5 /* learnmore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C8BA71C6BFFE900A899B5 /* learnmore.swift */; };
 		540EEFCC1C67B3FD003B0B66 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EEFCB1C67B3FD003B0B66 /* SignUp.swift */; };
 		540EEFCE1C67B429003B0B66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EEFCD1C67B429003B0B66 /* User.swift */; };
 		540EEFD01C67C011003B0B66 /* ExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EEFCF1C67C011003B0B66 /* ExpandingCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		246C8BA71C6BFFE900A899B5 /* learnmore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnmore.swift; sourceTree = "<group>"; };
 		540EEFCB1C67B3FD003B0B66 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		540EEFCD1C67B429003B0B66 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		540EEFCF1C67C011003B0B66 /* ExpandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandingCell.swift; path = "BTT-2/ExpandingCell.swift"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */,
 				54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */,
 				54BB87D41C4C3C1800DADA1E /* Main.storyboard */,
+				246C8BA71C6BFFE900A899B5 /* learnmore.swift */,
 				54BB87D71C4C3C1800DADA1E /* Assets.xcassets */,
 				54BB87DC1C4C3C1800DADA1E /* Info.plist */,
 			);
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BB87D11C4C3C1800DADA1E /* AppDelegate.swift in Sources */,
+				246C8BA81C6BFFE900A899B5 /* learnmore.swift in Sources */,
 				540EEFD01C67C011003B0B66 /* ExpandingCell.swift in Sources */,
 				54CC49D41C642BC8004339BD /* TableViewController.swift in Sources */,
 				540EEFCE1C67B429003B0B66 /* User.swift in Sources */,

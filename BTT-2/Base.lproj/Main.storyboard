@@ -163,7 +163,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x9l-YQ-sEL">
-                                <rect key="frame" x="76" y="301" width="139" height="72"/>
+                                <rect key="frame" x="76" y="301" width="139" height="71"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNf-gC-zpM">
                                         <rect key="frame" x="26" y="0.0" width="113" height="21"/>
@@ -230,10 +230,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tongue Thrust Logo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1me-6h-L4u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tongue Thrust Logo2" translatesAutoresizingMaskIntoConstraints="NO" id="1me-6h-L4u">
                                 <rect key="frame" x="6" y="51" width="384" height="205"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Wu6-GC-TSN">
@@ -366,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="456"/>
+            <point key="canvasLocation" x="457" y="-348"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="MN1-g5-kWI">
@@ -396,16 +396,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-cB-YtQ">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-cB-YtQ">
                                 <rect key="frame" x="41" y="224" width="149" height="278"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-9v-fLF">
-                                        <rect key="frame" x="61" y="0.0" width="88" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-9v-fLF">
+                                        <rect key="frame" x="62" y="0.0" width="88" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-Dx-UjL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-Dx-UjL">
                                         <rect key="frame" x="62" y="43" width="87" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6z0-qJ-93g"/>
@@ -415,7 +415,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz6-eb-0uc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz6-eb-0uc">
                                         <rect key="frame" x="41" y="86" width="108" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="1Wh-MS-xDS"/>
@@ -424,7 +424,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5Z-fj-e66">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5Z-fj-e66">
                                         <rect key="frame" x="10" y="129" width="139" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="83h-Lv-ZjY"/>
@@ -433,19 +433,19 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Confirm Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-1N-NJp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-1N-NJp">
                                         <rect key="frame" x="0.0" y="172" width="149" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-7E-KNg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-7E-KNg">
                                         <rect key="frame" x="15" y="215" width="134" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Confirm Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="583-vr-TZ6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="583-vr-TZ6">
                                         <rect key="frame" x="5" y="258" width="144" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -471,53 +471,53 @@
                                     <constraint firstItem="nIS-Dx-UjL" firstAttribute="top" secondItem="DMJ-cB-YtQ" secondAttribute="top" constant="43" id="y3Q-OV-vSU"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="lhI-OS-Y2g">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="lhI-OS-Y2g">
                                 <rect key="frame" x="265" y="226" width="150" height="276"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-MG-OBK">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-MG-OBK">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_FirstName"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pF-n0-6Fi">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pF-n0-6Fi">
                                         <rect key="frame" x="0.0" y="41" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_LastName"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9FJ-OG-XNb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9FJ-OG-XNb">
                                         <rect key="frame" x="0.0" y="82" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_email"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <action selector="emailTextFieldSelected:" destination="3ty-f9-OOi" eventType="touchDown" id="WyV-t4-f17"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose a username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWb-Dq-wRE">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose a username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWb-Dq-wRE">
                                         <rect key="frame" x="0.0" y="123" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_createUsername"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZW-fw-DhI">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZW-fw-DhI">
                                         <rect key="frame" x="0.0" y="164" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_confirmUsername"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose a password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-8Q-miN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose a password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-8Q-miN">
                                         <rect key="frame" x="0.0" y="205" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_createPassword"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-2L-ji5">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-2L-ji5">
                                         <rect key="frame" x="0.0" y="246" width="150" height="30"/>
                                         <accessibility key="accessibilityConfiguration" label="text_confirmPassword"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -530,13 +530,6 @@
                                 <state key="normal" title="Purchase"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="3ty-f9-OOi" eventType="primaryActionTriggered" id="eAo-gJ-HPF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-5D-KwX">
-                                <rect key="frame" x="483" y="20" width="42" height="30"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <segue destination="tHk-ti-3dI" kind="show" id="npM-U3-l4t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6K-Ms-ikH">
@@ -559,22 +552,34 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-5D-KwX">
+                                <rect key="frame" x="538" y="20" width="42" height="30"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <segue destination="tHk-ti-3dI" kind="show" id="npM-U3-l4t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lhI-OS-Y2g" secondAttribute="bottom" constant="98" id="6ED-16-XYF"/>
                             <constraint firstItem="k6K-Ms-ikH" firstAttribute="top" secondItem="9hd-ro-cg0" secondAttribute="bottom" constant="8.5" id="8oq-M9-VLz"/>
                             <constraint firstItem="eAS-FP-cqh" firstAttribute="centerX" secondItem="oLq-40-uh4" secondAttribute="centerX" id="9Ue-Q7-KKk"/>
                             <constraint firstItem="k6K-Ms-ikH" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" constant="15" id="J8V-YP-oJT"/>
+                            <constraint firstItem="lhI-OS-Y2g" firstAttribute="trailing" secondItem="9hd-ro-cg0" secondAttribute="trailing" id="KhH-nH-5XY"/>
                             <constraint firstItem="DMJ-cB-YtQ" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" id="RnP-1q-hFm"/>
+                            <constraint firstItem="lhI-OS-Y2g" firstAttribute="trailing" secondItem="T66-W4-UUY" secondAttribute="trailing" id="U2e-pg-Vo0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e7s-4P-kue" secondAttribute="trailing" id="a3s-D3-ZRR"/>
                             <constraint firstItem="ftS-hC-Xka" firstAttribute="top" secondItem="T66-W4-UUY" secondAttribute="bottom" constant="15" id="aS1-fU-bce"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lhI-OS-Y2g" secondAttribute="trailing" id="e19-2g-qpG"/>
+                            <constraint firstItem="UR2-5D-KwX" firstAttribute="trailing" secondItem="oLq-40-uh4" secondAttribute="trailingMargin" id="gGv-vW-7dn"/>
                             <constraint firstItem="e7s-4P-kue" firstAttribute="centerX" secondItem="oLq-40-uh4" secondAttribute="centerX" id="iJL-9w-Z6w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T66-W4-UUY" secondAttribute="trailing" constant="15" id="ipU-gE-aS8"/>
                             <constraint firstItem="e7s-4P-kue" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" id="kYo-ut-mVH"/>
+                            <constraint firstItem="9hd-ro-cg0" firstAttribute="top" secondItem="lhI-OS-Y2g" secondAttribute="bottom" constant="11" id="khx-hT-5lP"/>
                             <constraint firstItem="9hd-ro-cg0" firstAttribute="leading" secondItem="oLq-40-uh4" secondAttribute="leadingMargin" constant="21" id="oCB-oN-xPF"/>
                             <constraint firstItem="ftS-hC-Xka" firstAttribute="top" secondItem="k6K-Ms-ikH" secondAttribute="bottom" constant="15" id="p8a-ID-FUH"/>
+                            <constraint firstItem="lhI-OS-Y2g" firstAttribute="bottom" secondItem="DMJ-cB-YtQ" secondAttribute="bottom" id="tr5-gU-ShN"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="0Ux-EV-QmN" appends="YES" id="kKU-uc-9Hm"/>
@@ -599,7 +604,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="905" y="354"/>
+            <point key="canvasLocation" x="1422" y="-5"/>
         </scene>
         <!--Learnmore-->
         <scene sceneID="I5W-g5-iww">
@@ -705,7 +710,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-AV-j7o">
                                         <rect key="frame" x="8" y="31" width="517" height="233"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">You might have a tongue thrust if:
+                                        <string key="text">You might have a tongue thrust if:
 
       - Your tongue protrudes between/against your front teeth when forming /s, z,      t, d, n, l, sh/
       - You have a frequent open-mouth resting posture with your lips parted and/or your tongue resting against your front teeth
@@ -714,7 +719,7 @@
       - Your tongue is visible near the front of your mouth or between your teeth while swallowing and/or speaking
       - You are unable or have difficulty swallowing while smiling
       - You have experienced reversal of your orthodontic treatment
-      - You have protruding front teeth</mutableString>
+      - You have protruding front teeth</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -819,35 +824,7 @@ Ankyloglossia (tongue tied)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2c-oS-w1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="1027"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="eGV-wn-VvZ">
-            <objects>
-                <tableViewController id="dVI-kL-ATa" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LjO-ve-6al">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="36Z-vQ-pDD">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="36Z-vQ-pDD" id="xz8-G0-wpB">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="dVI-kL-ATa" id="26n-ZL-bLH"/>
-                            <outlet property="delegate" destination="dVI-kL-ATa" id="qdx-Ul-sdE"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PPM-4t-VjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1091" y="1757"/>
+            <point key="canvasLocation" x="813" y="1449"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="y0y-ZQ-eJD">
@@ -957,7 +934,7 @@ Ankyloglossia (tongue tied)</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="00z-KL-XGO">
-                                <rect key="frame" x="56" y="57" width="489" height="481"/>
+                                <rect key="frame" x="56" y="57" width="489" height="476"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prolonged use of artificial nipples (pacifiers, bottles, sippy cups)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zE-8b-rGF">
                                         <rect key="frame" x="0.0" y="0.0" width="489" height="21"/>
@@ -971,56 +948,56 @@ Ankyloglossia (tongue tied)</string>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="History of thumb or finger sucking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywf-zH-0bW">
-                                        <rect key="frame" x="0.0" y="92" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History of thumb or finger sucking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywf-zH-0bW">
+                                        <rect key="frame" x="0.0" y="91" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hereditary factors (family history of tongue thrust)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQN-3Y-l17">
-                                        <rect key="frame" x="0.0" y="138" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hereditary factors (family history of tongue thrust)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQN-3Y-l17">
+                                        <rect key="frame" x="0.0" y="137" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="History of ankyloglossia (tongue tied)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akw-Qb-dQz">
-                                        <rect key="frame" x="0.0" y="184" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History of ankyloglossia (tongue tied)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akw-Qb-dQz">
+                                        <rect key="frame" x="0.0" y="182" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="History of mouth breathing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOm-ce-TsZ">
-                                        <rect key="frame" x="0.0" y="230" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History of mouth breathing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOm-ce-TsZ">
+                                        <rect key="frame" x="0.0" y="228" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Reversal of orthodontic work" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N00-56-bPL">
-                                        <rect key="frame" x="0.0" y="276" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reversal of orthodontic work" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N00-56-bPL">
+                                        <rect key="frame" x="0.0" y="273" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="History of oral defensiveness" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2V-I7-iBR">
-                                        <rect key="frame" x="0.0" y="322" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History of oral defensiveness" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2V-I7-iBR">
+                                        <rect key="frame" x="0.0" y="319" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Difficulty swallowing pills" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wy-8C-LeH">
-                                        <rect key="frame" x="0.0" y="368" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Difficulty swallowing pills" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wy-8C-LeH">
+                                        <rect key="frame" x="0.0" y="364" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Feeding difficulties as an infant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-B4-GUl">
-                                        <rect key="frame" x="0.0" y="414" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Feeding difficulties as an infant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-B4-GUl">
+                                        <rect key="frame" x="0.0" y="410" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TMJ or reported jaw pain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scp-OO-XC1">
-                                        <rect key="frame" x="0.0" y="460" width="489" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TMJ or reported jaw pain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scp-OO-XC1">
+                                        <rect key="frame" x="0.0" y="455" width="489" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1045,7 +1022,7 @@ Ankyloglossia (tongue tied)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ia-h5-iLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="-280"/>
+            <point key="canvasLocation" x="-211" y="-360"/>
         </scene>
         <!--Title-->
         <scene sceneID="5st-v7-6YF">
@@ -1082,11 +1059,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="DVK-n2-gGo" detailTextLabel="Lhu-m3-hmY" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="Ivi-cN-6jT">
                                 <rect key="frame" x="43" y="88" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ivi-cN-6jT" id="451-fN-7vt">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DVK-n2-gGo">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1112,11 +1089,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="ifs-ue-Haw" rowHeight="27" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="AzG-cW-suk">
                                 <rect key="frame" x="83" y="134" width="389" height="27"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" tableViewCell="AzG-cW-suk" id="DPM-YO-qlx">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="26"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="26.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exercise One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ifs-ue-Haw">
-                                            <rect key="frame" x="15" y="0.0" width="335" height="26"/>
+                                            <rect key="frame" x="15" y="0.0" width="335" height="26.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1128,11 +1105,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="ggJ-TR-EWW" rowHeight="30" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="FI9-14-Ncq">
                                 <rect key="frame" x="83" y="162" width="389" height="30"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" tableViewCell="FI9-14-Ncq" id="hP7-kx-m59">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="29"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="29.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exercise Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ggJ-TR-EWW">
-                                            <rect key="frame" x="15" y="0.0" width="335" height="29"/>
+                                            <rect key="frame" x="15" y="0.0" width="335" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1144,11 +1121,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="bnU-Xk-Djk" rowHeight="32" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="cqD-af-eZg">
                                 <rect key="frame" x="83" y="193" width="389" height="32"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" tableViewCell="cqD-af-eZg" id="Znz-zd-aDD">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="31"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="31.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exercise Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bnU-Xk-Djk">
-                                            <rect key="frame" x="15" y="0.0" width="335" height="31"/>
+                                            <rect key="frame" x="15" y="0.0" width="335" height="31.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1160,11 +1137,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="y6V-6O-fst" rowHeight="28" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-0O-Aun">
                                 <rect key="frame" x="83" y="226" width="389" height="28"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" tableViewCell="6Ha-0O-Aun" id="wyo-gp-8i9">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="27"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="27.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exercise Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y6V-6O-fst">
-                                            <rect key="frame" x="15" y="0.0" width="335" height="27"/>
+                                            <rect key="frame" x="15" y="0.0" width="335" height="27.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1176,11 +1153,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="dfA-xL-kYU" rowHeight="28" style="IBUITableViewCellStyleDefault" translatesAutoresizingMaskIntoConstraints="NO" id="5w5-zJ-l8M">
                                 <rect key="frame" x="83" y="262" width="389" height="28"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" tableViewCell="5w5-zJ-l8M" id="0Q8-lN-S4l">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="27"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="27.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Worksheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dfA-xL-kYU">
-                                            <rect key="frame" x="15" y="0.0" width="335" height="27"/>
+                                            <rect key="frame" x="15" y="0.0" width="335" height="27.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1192,11 +1169,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="JGA-az-5iM" detailTextLabel="e0y-hJ-zLq" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="Aad-Gk-TRs">
                                 <rect key="frame" x="43" y="392" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aad-Gk-TRs" id="3xw-S0-09Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JGA-az-5iM">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1216,11 +1193,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="fqn-wE-b9e" detailTextLabel="768-Nd-quA" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-w9-Bni">
                                 <rect key="frame" x="43" y="439" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hvb-w9-Bni" id="7bc-FM-zQg">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqn-wE-b9e">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1240,11 +1217,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="cvM-PT-20k" detailTextLabel="Cxv-PE-4WE" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-cJ-Ec3">
                                 <rect key="frame" x="43" y="486" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOm-cJ-Ec3" id="Hen-0M-ijc">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cvM-PT-20k">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1264,11 +1241,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="xf4-WG-Jbs" detailTextLabel="hEk-Yy-Keb" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="MNc-4r-yuQ">
                                 <rect key="frame" x="43" y="533" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MNc-4r-yuQ" id="kFF-BW-QFt">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xf4-WG-Jbs">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1288,11 +1265,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="2yX-WK-Z5j" detailTextLabel="eRf-PX-vf6" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="omS-kr-LNu">
                                 <rect key="frame" x="43" y="345" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="omS-kr-LNu" id="xtv-kN-vLD">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2yX-WK-Z5j">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1312,11 +1289,11 @@ Ankyloglossia (tongue tied)</string>
                             <tableViewCell clipsSubviews="YES" tag="5" contentMode="top" semanticContentAttribute="playback" fixedFrame="YES" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailButton" textLabel="BNG-g7-xfO" detailTextLabel="3an-ck-aX1" style="IBUITableViewCellStyleValue1" translatesAutoresizingMaskIntoConstraints="NO" id="sGF-Gf-KSE">
                                 <rect key="frame" x="43" y="298" width="501" height="44"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sGF-Gf-KSE" id="uFm-rF-I6B">
-                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="462" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BNG-g7-xfO">
-                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1381,12 +1358,12 @@ Ankyloglossia (tongue tied)</string>
     </scenes>
     <resources>
         <image name="Coming-Soon.png" width="700" height="300"/>
-        <image name="Tongue Thrust Logo2.jpg" width="1108" height="524"/>
+        <image name="Tongue Thrust Logo2" width="554" height="262"/>
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nQY-QZ-DVI"/>
+        <segue reference="TUl-5R-u9a"/>
         <segue reference="npM-U3-l4t"/>
-        <segue reference="hmA-lb-rnh"/>
+        <segue reference="Brt-k0-ext"/>
     </inferredMetricsTieBreakers>
 </document>

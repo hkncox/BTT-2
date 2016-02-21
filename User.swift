@@ -14,12 +14,14 @@ class User: NSObject{
     var userName = ""
     var password = ""
     var email = ""
-    init(_firstName: String, _lastName: String, _userName: String, _password: String, _email: String)
+    var accountType = ""
+    init(_firstName: String, _lastName: String, _userName: String, _password: String, _email: String, _accountType: String)
     {
-        firstName = _firstName;
-        lastName = _lastName;
-        userName = _userName;
-        password = _password;
-        email = _email;
+        firstName = _firstName
+        lastName = _lastName
+        userName = _userName
+        password = _password
+        email = _email
+        accountType = _accountType
     }
 }

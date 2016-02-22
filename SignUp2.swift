@@ -77,7 +77,8 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_confirmUserName.enabled = true
         text_createPassword.enabled = true
         text_confirmPassword.enabled = true
-        button_signUp.setTitle("Purchase", forState: UIControlState.Normal)
+        button_signUp.setTitle("Display Cost", forState: UIControlState.Normal)
+        validated = false;
         
     }
     @IBAction func SignUpButtonTapped(button_signUp: UIButton)

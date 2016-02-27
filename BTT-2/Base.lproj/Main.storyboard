@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="-458" y="354"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Lesson Table View Controller-->
         <scene sceneID="Bky-Xt-GbC">
             <objects>
-                <tableViewController id="XGF-C2-VdP" sceneMemberID="viewController">
+                <tableViewController id="XGF-C2-VdP" customClass="LessonTableViewController" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="85R-ER-hta">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,21 +129,87 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
                                     <rect key="frame" x="537" y="37" width="55" height="30"/>
                                     <state key="normal" title="Log Out"/>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tongue Thrust Treatment Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-9r-LZx">
+                                    <rect key="frame" x="14" y="41" width="349" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Oro-9r-LZx" firstAttribute="leading" secondItem="gWA-hT-Ge7" secondAttribute="leadingMargin" constant="6" id="Zfi-t1-wDd"/>
+                                <constraint firstItem="SDO-DL-etn" firstAttribute="trailing" secondItem="gWA-hT-Ge7" secondAttribute="trailingMargin" id="huV-hW-vW5"/>
+                            </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bHD-8I-dUs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" id="bHD-8I-dUs" customClass="LessonTableViewCell" customModule="BTT_2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="109" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bHD-8I-dUs" id="pxa-Cz-Dxw">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-Zk-hbY">
+                                            <rect key="frame" x="-1" y="0.0" width="535" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Week #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-kT-dx8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRv-Hu-0jR">
+                                                    <rect key="frame" x="90" y="0.0" width="100" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="aV4-hC-Jar"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Exercise 1"/>
+                                                    <connections>
+                                                        <segue destination="dvy-Cj-aR1" kind="show" id="v2K-ib-qYt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-FN-bGa">
+                                                    <rect key="frame" x="212" y="0.0" width="100" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="t6x-af-FoQ"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Exercise 2"/>
+                                                    <connections>
+                                                        <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise2" id="47t-cT-LD1"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-mP-aYu">
+                                                    <rect key="frame" x="334" y="0.0" width="100" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="Qth-Ua-XQp"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Exercise 3"/>
+                                                    <connections>
+                                                        <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise3" id="GnT-MJ-NQY"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Complete: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaC-l5-cPu">
+                                                    <rect key="frame" x="456" y="0.0" width="79" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="btn_exercise1" destination="VRv-Hu-0jR" id="y8D-db-OXX"/>
+                                    <outlet property="btn_exercise2" destination="NpT-FN-bGa" id="eVW-Ld-HD7"/>
+                                    <outlet property="btn_exercise3" destination="cjN-mP-aYu" id="Kmh-ii-Mec"/>
+                                    <outlet property="label_complete" destination="gaC-l5-cPu" id="veh-TU-FVn"/>
+                                    <outlet property="label_weekNum" destination="ojd-kT-dx8" id="rbo-0c-TBs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -155,6 +221,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAF-8S-slA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-640" y="1069"/>
+        </scene>
+        <!--Lesson View Controller-->
+        <scene sceneID="GYr-Cv-oe6">
+            <objects>
+                <viewController id="dvy-Cj-aR1" customClass="LessonViewController" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qrN-6E-68u"/>
+                        <viewControllerLayoutGuide type="bottom" id="oih-AQ-ngC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mDu-88-gSf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-6d-6gP">
+                                <rect key="frame" x="0.0" y="28" width="600" height="533"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Exercise Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io4-Un-NTQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG0-5K-Mje">
+                                        <rect key="frame" x="0.0" y="31" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFw-Qo-gqV">
+                                        <rect key="frame" x="0.0" y="59" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Instructions" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iga-Wv-T98">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="87"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zul-V6-MVI">
+                                        <rect key="frame" x="0.0" y="180" width="600" height="259"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Tips" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRK-Sm-jRG">
+                                        <rect key="frame" x="0.0" y="446" width="600" height="87"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-rx-PZC">
+                                <rect key="frame" x="257" y="28" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBN-6v-vuN">
+                                <rect key="frame" x="13" y="562" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="XGF-C2-VdP" kind="show" identifier="segue_backToLessons" id="El5-NK-g3I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Kc-6d-6gP" firstAttribute="centerX" secondItem="mDu-88-gSf" secondAttribute="centerX" id="eW8-pJ-5GI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zr7-Z2-dTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="1052"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fDi-0Q-Xr6">
@@ -258,7 +399,7 @@
                     </textField>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="52" y="1237"/>
+            <point key="canvasLocation" x="229" y="392"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1114,8 +1255,9 @@ Ankyloglossia (tongue tied)</string>
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TUl-5R-u9a"/>
+        <segue reference="GnT-MJ-NQY"/>
         <segue reference="npM-U3-l4t"/>
+        <segue reference="TUl-5R-u9a"/>
         <segue reference="Brt-k0-ext"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,13 @@ import UIKit
 
 class LessonTableViewCell: UITableViewCell {
 
+    //MARK properties
+    @IBOutlet weak var label_weekNum: UILabel!
+    @IBOutlet weak var btn_exercise1: UIButton!
+
+    @IBOutlet weak var btn_exercise2: UIButton!
+    @IBOutlet weak var btn_exercise3: UIButton!
+    @IBOutlet weak var label_complete: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

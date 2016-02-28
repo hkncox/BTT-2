@@ -112,18 +112,27 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         if ([picker_accountType.selectedRowInComponent(0)] == 0) //THERAPIST
         {
             label_error.text = "The price for therapist access is $$$. Press Purchase to Continue"
-            //CHECK PAYMENT HERE. IF SUCCESFUL, THEN CREATE USER
+           
+            //CHECK PAYMENT HERE. IF SUCCESSFULL
+            // ADD TO DATABASE
+           
             
-            users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Therapist"))
-            //  ADD PERSISTANT STORAGE/DATABASE HERE!!
+            
+          //  users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Therapist"))
+         
             NSLog(users[0].firstName)
         }
         else //SINGLE USER
         {
             
             label_error.text = "The price for single user access is $$$. Press Purchase to Continue"
-            users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Single User"))
-            //ADD PERSISTANT STORAGE/DATABASE HERE!!
+            
+            //CHECK PAYMENT
+            
+            //ADD TO DATABASE
+            
+            // users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Single User"))
+          
         }
         
     }

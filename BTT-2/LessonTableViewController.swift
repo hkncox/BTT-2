@@ -8,9 +8,10 @@
 
 import UIKit
 
-class LessonTableViewController: UITableViewController {
+class LessonTableViewController: UITableViewController{
 
-    var lessonCreator: LessonCreator!
+    @IBOutlet weak var tblLessons: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +21,11 @@ class LessonTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
+    override func viewWillAppear(animated: Bool) {
+        
+        LessonCreator.getInstance().createWeeks()
+        tblLessons.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,25 +33,24 @@ class LessonTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return sharedInstance.weeks.count
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("lessonCell") as! LessonTableViewCell
+        let week: Week = sharedInstance.weeks[indexPath.row]
+        cell.btn_exercise1.tag = indexPath.row
+        cell.btn_exercise2.tag = indexPath.row
+        cell.btn_exercise3.tag = indexPath.row
+        cell.label_weekNum.text = week.weekNumber
+        cell.label_complete.text = "\(week.complete)"
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

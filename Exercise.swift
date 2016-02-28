@@ -16,15 +16,18 @@ class Exercise{
     var instructions: String
     var tips: String
   //  var video: AVPlayerViewController
+    var exerciseNumber: String
     
-   init?(numTimesCompleted: Int, title: String, duration: String, frequency: String, instructions: String, tips: String)
+    init?(numTimesCompleted: Int, title: String, duration: String, frequency: String, instructions: String, tips: String, exerciseNumber: String)
     {
+        
         self.numTimesCompleted = numTimesCompleted
         self.title = title
         self.duration = duration
         self.frequency = frequency
         self.instructions = instructions
         self.tips = tips
+        self.exerciseNumber = exerciseNumber
     //    self.video = video
 
     }

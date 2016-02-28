@@ -8,8 +8,17 @@
 
 import UIKit
 
-class LessonCreator{
+let sharedInstance = LessonCreator()
+
+class LessonCreator: NSObject{
  //   var av: AVPlayerViewController =
+   
+    class func getInstance() -> LessonCreator
+    {
+            
+        return sharedInstance
+    }
+    
    var weeks = [Week]()
     var week1Exercises = [Exercise]()
      var week2Exercises = [Exercise]()
@@ -23,14 +32,16 @@ class LessonCreator{
     var freq_3x7: String = "Three times a day for seven days"
     var duration_30sec: String = "30 Seconds"
     var exercise1Instructions: String = "Relax: Let your tongue relax on the floor of your mouth, inside your bottom teeth. \nTouch: Hold a tongue depressor straight up and down touching the tip of your tongue. \n Tap: Tap the tip of your tongue with the tongue depressor for 30 seconds"
-    var exercise1Tips: String = "1. Look at your tongue in a mirror during the entire exercise. 2. Make sure you hold the tongue depressor vertically, not horizontally. 3. Keep your tongue as relaxed as possible during the entire 30 seconds."
-    func createWeek1Exercises (){
+    var exercise1Tips: String = "1. Look at your tongue in a mirror during the entire exercise. \n2. Make sure you hold the tongue depressor vertically, not horizontally. \n3. Keep your tongue as relaxed as possible during the entire 30 seconds."
+    func createWeek1Exercises () -> [Exercise]{
         week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tap Tips", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Instructions, tips: exercise1Tips, exerciseNumber: "Exercise 1")!)
-        
+    
+    
+        return week1Exercises
         
     }
-    func createWeek1() {
-        weeks.append(Week(weekNumber: "Week 1", exercises: week1Exercises, complete: false)!)
+    func createWeeks() {
+        weeks.append(Week(weekNumber: "Week 1", exercises: createWeek1Exercises(), complete: false)!)
     }
 
       /*  init() {

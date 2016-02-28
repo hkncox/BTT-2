@@ -9,19 +9,21 @@
 import UIKit
 
 class User: NSObject{
-    var firstName = ""
-    var lastName = ""
-    var userName = ""
-    var password = ""
-    var email = ""
-    var accountType = ""
-    init(_firstName: String, _lastName: String, _userName: String, _password: String, _email: String, _accountType: String)
-    {
-        firstName = _firstName
-        lastName = _lastName
-        userName = _userName
-        password = _password
-        email = _email
-        accountType = _accountType
-    }
-}
+    var firstName: String = String()
+    var lastName: String = String()
+    var userName: String = String()
+    var password: String = String()
+    var email: String = String()
+    var account_type: String = String() //maybe enum? Single user, therapist, or Patient. How to use inheritence with database?
+    //for therapist and single user
+    var payment: Bool = false
+    
+    //for therapist
+    var patients: [User] = [User]()
+    
+    //for patients
+    var accessCode: Int = Int()
+    
+    //patient/therapist relationship maybe needs to be in release #2
+   }
+

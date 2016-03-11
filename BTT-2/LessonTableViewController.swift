@@ -23,8 +23,7 @@ class LessonTableViewController: UITableViewController{
     }
     override func viewWillAppear(animated: Bool) {
         
-        LessonCreator.getInstance().createWeeks()
-        tblLessons.reloadData()
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,10 +91,30 @@ class LessonTableViewController: UITableViewController{
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    
+        if(segue.identifier == "segue_exercise1")
+        {
+            let btnExercise : UIButton = sender as! UIButton
+            let selectedIndex : Int = btnExercise.tag
+            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[0]
+        }
+        if(segue.identifier == "segue_exercise2")
+        {
+            let btnExercise : UIButton = sender as! UIButton
+            let selectedIndex : Int = btnExercise.tag
+            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[1]
+        }
+        if(segue.identifier == "segue_exercise3")
+        {
+            let btnExercise : UIButton = sender as! UIButton
+            let selectedIndex : Int = btnExercise.tag
+            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[2]
+        }
     }
+ 
+
     
 
 }

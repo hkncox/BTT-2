@@ -31,15 +31,27 @@ class LessonCreator: NSObject{
     var week9Exercises = [Exercise]()
     var freq_3x7: String = "Three times a day for seven days"
     var duration_30sec: String = "30 Seconds"
-    var exercise1Instructions: String = "Relax: Let your tongue relax on the floor of your mouth, inside your bottom teeth. \nTouch: Hold a tongue depressor straight up and down touching the tip of your tongue. \n Tap: Tap the tip of your tongue with the tongue depressor for 30 seconds"
-    var exercise1Tips: String = "1. Look at your tongue in a mirror during the entire exercise. \n2. Make sure you hold the tongue depressor vertically, not horizontally. \n3. Keep your tongue as relaxed as possible during the entire 30 seconds."
-    func createWeek1Exercises () -> [Exercise]{
-        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tap Tips", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Instructions, tips: exercise1Tips, exerciseNumber: "Exercise 1")!)
+    var wk1exercise1Instructions: String = "Relax: Let your tongue relax on the floor of your mouth, inside your bottom teeth. \nTouch: Hold a tongue depressor straight up and down touching the tip of your tongue. \n Tap: Tap the tip of your tongue with the tongue depressor for 30 seconds"
+    var wk1exercise1Tips: String = "1. Look at your tongue in a mirror during the entire exercise. \n2. Make sure you hold the tongue depressor vertically, not horizontally. \n3. Keep your tongue as relaxed as possible during the entire 30 seconds."
     
+    var wk1exercise2Instructions: String = ""//ADD WEEK 1 exercise 2 instruction
+    var wk1exercise2Tips: String = "" //add week 1 exercise 2 tips
+    
+    func createWeek1Exercises () -> [Exercise]{
+        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tap Tips", duration: duration_30sec, frequency: freq_3x7, instructions: wk1exercise1Instructions, tips: wk1exercise1Tips, exerciseNumber: "Exercise 1")!)
+        week1Exercises.append(
     
         return week1Exercises
         
     }
+    func createWeek2Exercises () -> [Exercise]{
+        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tap Tips", duration: duration_30sec, frequency: freq_3x7, instructions: wk1exercise1Instructions, tips: wk1exercise1Tips, exerciseNumber: "Exercise 1")!)
+        week2Exercises.append(
+            
+            return week1Exercises
+        
+    }
+
     func createWeeks() {
         weeks.append(Week(weekNumber: "Week 1", exercises: createWeek1Exercises(), complete: false)!)
     }

@@ -14,16 +14,22 @@ class User: NSObject{
     var userName: String = String()
     var password: String = String()
     var email: String = String()
-    var account_type: String = String() //maybe enum? Single user, therapist, or Patient. How to use inheritence with database?
-    //for therapist and single user
+    var accountType: String = String()
+           //for patients
+     //patient/therapist relationship maybe needs to be in release #2
+   }
+
+
+class Therapist: User {
+   
     var payment: Bool = false
     
     //for therapist
     var patients: [User] = [User]()
     
-    //for patients
+}
+class Patient: User {
     var accessCode: Int = Int()
+    var completionTracker: [Bool] = [Bool]()
     
-    //patient/therapist relationship maybe needs to be in release #2
-   }
-
+}

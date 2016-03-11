@@ -113,7 +113,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         {
             label_error.text = "The price for therapist access is $$$. Press Purchase to Continue"
            
-            //CHECK PAYMENT HERE. IF SUCCESSFULL
+            //CHECK PAYMENT HERE. IF SUCCESSFUL
             // ADD TO DATABASE
            
             

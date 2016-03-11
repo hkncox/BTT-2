@@ -16,11 +16,12 @@ class LessonViewController: UIViewController {
     @IBOutlet weak var lbl_frequency: UILabel!
     @IBOutlet weak var lbl_instructions: UITextView!
     @IBOutlet weak var lbl_tips: UITextView!
+    var space: String = " - "
     
      var exercise: Exercise!
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl_exerciseNum.text = exercise.exerciseNumber
+        lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
         lbl_duration.text = exercise.duration
         lbl_instructions.text = exercise.instructions
         lbl_tips.text = exercise.tips

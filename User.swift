@@ -9,14 +9,21 @@
 import UIKit
 
 class User: NSObject{
-    var firstName: String = String()
-    var lastName: String = String()
-    var userName: String = String()
-    var password: String = String()
-    var email: String = String()
-    var accountType: String = String()
+    var firstName: String
+    var lastName: String
+    var password: String
+    var email: String
+    var accountType: String
            //for patients
-     //patient/therapist relationship maybe needs to be in release #2
+     //patient/therapist relationship maybe needs to be in release #2{
+    
+    init(firstName: String, lastName: String, password: String, email: String, accountType: String){
+        self.firstName = firstName
+        self.lastName = lastName
+        self.password = password
+        self.email = email
+        self.accountType = accountType
+    }
    }
 
 

@@ -16,8 +16,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var text_email: UITextField!
     @IBOutlet var text_firstName: UITextField!
     @IBOutlet var text_lastName: UITextField!
-    @IBOutlet var text_createUserName: UITextField!
-    @IBOutlet var text_confirmUserName: UITextField!
     @IBOutlet var text_createPassword: UITextField!
     @IBOutlet var label_error: UILabel!
     @IBOutlet var text_confirmPassword: UITextField!
@@ -66,15 +64,11 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     {
         text_firstName.text = ""
         text_lastName.text = ""
-        text_createUserName.text = ""
-        text_confirmUserName.text = ""
         text_createPassword.text = ""
         text_confirmPassword.text = ""
         label_error.text = ""
         text_firstName.enabled = true
         text_lastName.enabled = true
-        text_createUserName.enabled = true
-        text_confirmUserName.enabled = true
         text_createPassword.enabled = true
         text_confirmPassword.enabled = true
         button_signUp.setTitle("Display Cost", forState: UIControlState.Normal)
@@ -88,7 +82,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
             purchase()
         }
         else {
-            validate(text_firstName.text!, _lastName: text_lastName.text!, _createUserName: text_createUserName.text!, _confirmUserName: text_confirmUserName.text!, _createPassword: text_createPassword.text!, _confirmPassword: text_confirmPassword.text!, _email: text_email.text!)
+            validate(text_firstName.text!, _lastName: text_lastName.text!, _createPassword: text_createPassword.text!, _confirmPassword: text_confirmPassword.text!, _email: text_email.text!)
             if (validated)
             {
                 purchase()
@@ -104,8 +98,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     {
         text_firstName.enabled = false;
         text_lastName.enabled = false;
-        text_createUserName.enabled = false;
-        text_confirmUserName.enabled = false;
         text_createPassword.enabled = false;
         text_confirmPassword.enabled = false;
         button_signUp.setTitle("Purchase", forState: UIControlState.Normal)
@@ -140,7 +132,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         // Disable the Save button while editing.
         button_signUp.enabled = false
     }
-    func validate(_firstName: String, _lastName: String, _createUserName: String, _confirmUserName: String, _createPassword: String, _confirmPassword: String, _email: String)
+    func validate(_firstName: String, _lastName: String, _createPassword: String, _confirmPassword: String, _email: String)
     {
         validated = true;
         if !(isValidName(text_firstName.text!) || text_firstName == nil)
@@ -165,22 +157,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
             validated = false;
             return;
         }
-        if (!isValidUserName(text_createUserName.text!))
-        {
-            //CHECK IF ALREADY EXISTS IN DATABASE!
-            label_error.text = "Invalid or missing username. Please try again"
-            text_createUserName.clearsOnBeginEditing = true;
-            validated = false;
-            return;
-        }
-        if (text_createUserName.text != text_confirmUserName.text)
-        {
-            label_error.text = "Confirm username did not match username."
-            text_confirmUserName.clearsOnBeginEditing = true;
-            validated = false;
-            return;
-        }
-        
         if (!isValidPassword(text_createPassword.text!))
         {
             label_error.text = "Enter a password with 6 characters minimum"
@@ -191,7 +167,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         if (text_createPassword.text != text_confirmPassword.text)
         {
             label_error.text = "Confirm password did not match password."
-            text_confirmUserName.clearsOnBeginEditing = true;
+            text_confirmPassword.clearsOnBeginEditing = true;
             validated = false;
             return;
             
@@ -209,12 +185,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         return result
         
     }
-    func isValidUserName(userName: String) -> Bool {
-        let usernameRegEx = "[a-z0-9_-]{3,16}"
-        let usernameTest = NSPredicate(format: "SELF MATCHES %@", usernameRegEx)
-        let result = usernameTest.evaluateWithObject(userName)
-        return result
-    }
     func isValidPassword(password: String) -> Bool {
         let passwordRegEx = "[a-z0-9_-]{6,16}"
         let passowordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
@@ -230,8 +200,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBAction func dismissKeyboard(sender: AnyObject){
         text_confirmPassword.resignFirstResponder()
         text_createPassword.resignFirstResponder()
-        text_confirmUserName.resignFirstResponder()
-        text_createUserName.resignFirstResponder()
         text_firstName.resignFirstResponder()
         text_lastName.resignFirstResponder()
         text_email.resignFirstResponder()

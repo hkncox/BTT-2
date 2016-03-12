@@ -1,11 +1,11 @@
 //
-//  User.swift
+//  User2.swift
 //  BTT-2
 //
 //  Created by Nicole Talley on 2/7/16.
 //  Copyright © 2016 Nicole Talley. All rights reserved.
 //
-/*
+
 import UIKit
 
 class User: NSObject{
@@ -15,8 +15,8 @@ class User: NSObject{
     var password: String?
     var email: String?
     var accountType: String?
-           //for patients
-     //patient/therapist relationship maybe needs to be in release #2
+    //for patients
+    //patient/therapist relationship maybe needs to be in release #2
     override init(){
     }
     init(firstName: String, lastName: String, password: String, email: String, accountType: String){
@@ -30,7 +30,7 @@ class User: NSObject{
 
 
 class Therapist: User {
-   
+    
     var payment: Bool = false
     
     //for therapist
@@ -41,4 +41,4 @@ class Patient: User {
     var accessCode: Int = Int()
     var completionTracker: [Bool] = [Bool]()
     
-}*/
+}

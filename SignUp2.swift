@@ -66,11 +66,13 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_lastName.text = ""
         text_createPassword.text = ""
         text_confirmPassword.text = ""
+        text_email.text = ""
         label_error.text = ""
         text_firstName.enabled = true
         text_lastName.enabled = true
         text_createPassword.enabled = true
         text_confirmPassword.enabled = true
+        text_email.enabled = true
         button_signUp.setTitle("Display Cost", forState: UIControlState.Normal)
         validated = false;
         
@@ -88,11 +90,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
                 purchase()
             }
         }
-        
-        
-        // label_error.text = "
-        
-        
+     
     }
     func purchase()
     {
@@ -112,7 +110,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
             
           //  users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Therapist"))
          
-            NSLog(users[0].firstName)
+      //      NSLog(users[0].firstName)
         }
         else //SINGLE USER
         {
@@ -128,6 +126,39 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         }
         
     }
+    /*func addToDB(){
+        var dataDictionary:[String:String?] = [ "firstName" : text_firstName.text, "lastName" : text_lastName.text, "email" : text_email.text, "password" : text_createPassword.text, "accountType" : picker_accountType.selectedRowInComponent]
+        
+        var data:NSData = NSJSONSerialization.dataWithJSONObject(dataDictionary, options: nil, error: nil)!
+        request.HTTPBody = data
+        
+        NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+        
+        NSURL * url = [NSURL URLWithString:@"http://www.utahscommunicationconnection.com/postService.php"];
+        NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:url];
+        [urlRequest setHTTPMethod:@"POST"];
+        [urlRequest setHTTPBody:[noteDataString dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:urlRequest completionHandler:^(NSData *dataRaw, NSURLResponse *header, NSError *error) {
+        NSDictionary *json = [NSJSONSerialization
+        JSONObjectWithData:dataRaw
+        options:kNilOptions error:&error];
+        NSString *status = json[@"status"];
+        
+        if([status isEqual:@"1"]){
+        //Success
+        
+        } else {
+        //Error
+        
+        }
+        }];
+        
+        [dataTask resume];
+    }
+*/
+
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
         button_signUp.enabled = false
@@ -204,5 +235,6 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_lastName.resignFirstResponder()
         text_email.resignFirstResponder()
     }
+    
     
 }

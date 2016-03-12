@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class LessonViewController: UIViewController {
 
@@ -16,8 +18,9 @@ class LessonViewController: UIViewController {
     @IBOutlet weak var lbl_frequency: UILabel!
     @IBOutlet weak var lbl_instructions: UITextView!
     @IBOutlet weak var lbl_tips: UITextView!
-    var space: String = " - "
     
+    
+    @IBOutlet weak var btn_playVideo: UIButton!
      var exercise: Exercise!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +28,21 @@ class LessonViewController: UIViewController {
         lbl_duration.text = exercise.duration
         lbl_instructions.text = exercise.instructions
         lbl_tips.text = exercise.tips
-   
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
     
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let viewController: VideoViewController = segue.destinationViewController as! VideoViewController
+        viewController.exercise = exercise
     }
-    */
+
 
 }

@@ -17,7 +17,21 @@ class Exercise{
     var tips: String
   //  var video: AVPlayerViewController
     var exerciseNumber: String
+    var videoURL: String?
     
+    init?(numTimesCompleted: Int, title: String, duration: String, frequency: String, instructions: String, tips: String, exerciseNumber: String, videoURL: String)
+    {
+        
+        self.numTimesCompleted = numTimesCompleted
+        self.title = title
+        self.duration = duration
+        self.frequency = frequency
+        self.instructions = instructions
+        self.tips = tips
+        self.exerciseNumber = exerciseNumber
+        self.videoURL = videoURL
+
+    }
     init?(numTimesCompleted: Int, title: String, duration: String, frequency: String, instructions: String, tips: String, exerciseNumber: String)
     {
         
@@ -28,7 +42,7 @@ class Exercise{
         self.instructions = instructions
         self.tips = tips
         self.exerciseNumber = exerciseNumber
-    //    self.video = video
-
+              
     }
+
 }

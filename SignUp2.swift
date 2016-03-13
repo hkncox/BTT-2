@@ -17,7 +17,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var text_firstName: UITextField!
     @IBOutlet var text_lastName: UITextField!
     @IBOutlet var text_createPassword: UITextField!
-    @IBOutlet var label_error: UILabel!
+    @IBOutlet var label_error: UITextView!
     @IBOutlet var text_confirmPassword: UITextField!
     @IBOutlet var picker_accountType: UIPickerView!
     @IBOutlet var button_signUp: UIButton!

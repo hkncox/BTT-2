@@ -38,11 +38,20 @@ class LessonViewController: UIViewController {
   
     
     // MARK: - Navigation
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let viewController: VideoViewController = segue.destinationViewController as! VideoViewController
-        viewController.exercise = exercise
-    }
+        override func prepareForSegue(segue: UIStoryboardSegue,
+            sender: AnyObject?) {
+                let pathstr = exercise.videoURL
+                let destination = segue.destinationViewController as! AVPlayerViewController
+               // let url = NSURL(string:"http://www.bustthethrust.com/video/tonguetiptaps.mp4")
+                guard let path = NSBundle.mainBundle().pathForResource(pathstr, ofType:"mp4") else {
+                    print("no video found")
+                    return
+                }
+                destination.player = AVPlayer(URL: NSURL(fileURLWithPath: path))
+                destination.player!.play()
+        }
+    
+    
 
 
 }

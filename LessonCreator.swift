@@ -184,7 +184,7 @@ class LessonCreator: NSObject{
     
     
     func createWeek1Exercises () -> [Exercise]{
-        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week1Instructions, tips: exercise1Week1Tips, exerciseNumber: "Exercise 1", videoURL:"http://www.bustthethrust.com/video/tonguetiptaps.mp4")!)
+        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week1Instructions, tips: exercise1Week1Tips, exerciseNumber: "Exercise 1", videoURL:"video/tonguetiptaps")!)
         week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Side Strokes", duration: duration_10times, frequency: freq_3x7, instructions: exercise2Week1Instructions, tips: exercise2Week1Tips, exerciseNumber: "Exercise 2")!)
         week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pops", duration: duration_10x10, frequency: freq_3x7, instructions: exercise3Week1Instructions, tips: exercise3Week1Tips, exerciseNumber: "Exercise 3")!)
         

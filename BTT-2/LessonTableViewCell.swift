@@ -19,7 +19,9 @@ class LessonTableViewCell: UITableViewCell {
     @IBOutlet weak var label_complete: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        btn_exercise1.layer.cornerRadius = 10
+        btn_exercise2.layer.cornerRadius = 10
+        btn_exercise3.layer.cornerRadius = 10
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

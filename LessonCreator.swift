@@ -278,10 +278,5 @@ class LessonCreator: NSObject{
         weeks.append(Week(weekNumber: "Week 9", exercises: createWeek9Exercises(), complete: false)!)
     }
     
-    /*  init() {
-    
-    for _ in 0..<9{
-    createWeeks()
-    }
-    }*/
+   
 }

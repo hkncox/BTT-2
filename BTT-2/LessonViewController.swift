@@ -25,7 +25,8 @@ class LessonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
-        lbl_duration.text = exercise.duration
+        lbl_duration.text = "Duration: \(exercise.duration)"
+        lbl_frequency.text = "Frequency: \(exercise.frequency)"
         lbl_instructions.text = exercise.instructions
         lbl_tips.text = exercise.tips
        

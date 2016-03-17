@@ -19,5 +19,10 @@ class Week{
         self.exercises = exercises
         self.complete = complete
     }
+    init (weekNumber: String, exercises: [Exercise])
+    {
+        self.weekNumber = weekNumber
+        self.exercises = exercises
+    }
     
 }

@@ -185,82 +185,93 @@ class LessonCreator: NSObject{
     
     func createWeek1Exercises () -> [Exercise]{
         week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week1Instructions, tips: exercise1Week1Tips, exerciseNumber: "Exercise 1", videoURL:"video/tonguetiptaps")!)
-        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Side Strokes", duration: duration_10times, frequency: freq_3x7, instructions: exercise2Week1Instructions, tips: exercise2Week1Tips, exerciseNumber: "Exercise 2")!)
-        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pops", duration: duration_10x10, frequency: freq_3x7, instructions: exercise3Week1Instructions, tips: exercise3Week1Tips, exerciseNumber: "Exercise 3")!)
+        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Side Strokes", duration: duration_10times, frequency: freq_3x7, instructions: exercise2Week1Instructions, tips: exercise2Week1Tips, exerciseNumber: "Exercise 2", videoURL: "video/tonguesidestrokes")!)
+        week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pops", duration: duration_10x10, frequency: freq_3x7, instructions: exercise3Week1Instructions, tips: exercise3Week1Tips, exerciseNumber: "Exercise 3", videoURL: "video/tonguepops")!)
         
         return week1Exercises
         
     }
     
     func createWeek2Exercises() -> [Exercise]{
-        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week2Instructions, tips: exercise1Week2Tips, exerciseNumber: "Exercise 1")!)
-        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pull Backs", duration: duration_20times, frequency: freq_3x7, instructions: exercise2Week2Instructions, tips: exercise2Week2Tips, exerciseNumber: "Exercise 2")!)
-        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Suck and Bite", duration: duration_10x10close, frequency: freq_3x7, instructions: exercise3Week2Instructions, tips: exercise3Week2Tips, exerciseNumber: "Exercise 3")!)
-        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Bite Strengthening", duration: duration_10x10, frequency: freq_3x7, instructions: exercise4Week2Instructions, tips: exercise4Week2Tips, exerciseNumber: "Exercise 4")!)
+        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week2Instructions, tips: exercise1Week2Tips, exerciseNumber: "Exercise 1", videoURL: "video/tonguetiptaps")!)
+        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pull Backs", duration: duration_20times, frequency: freq_3x7, instructions: exercise2Week2Instructions, tips: exercise2Week2Tips, exerciseNumber: "Exercise 2", videoURL: "video/tonguepullbacks")!)
+        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Suck and Bite", duration: duration_10x10close, frequency: freq_3x7, instructions: exercise3Week2Instructions, tips: exercise3Week2Tips, exerciseNumber: "Exercise 3", videoURL: "video/tonguesuckandbite")!)
+        week2Exercises.append(Exercise(numTimesCompleted: 0, title: "Bite Strengthening", duration: duration_10x10, frequency: freq_3x7, instructions: exercise4Week2Instructions, tips: exercise4Week2Tips, exerciseNumber: "Exercise 4", videoURL: "video/bitestrengthening")!)
         
         
         return week2Exercises
     }
     
     func createWeek3Exercises() -> [Exercise]{
-        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week3Instructions, tips: exercise1Week3Tips, exerciseNumber: "Exercise 1")!)
-        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pull Backs", duration: duration_20times, frequency: freq_3x7, instructions: exercise2Week3Instructions, tips: exercise2Week3Tips, exerciseNumber: "Exercise 2")!)
-        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Straw Swallows", duration: duration_15times5x5x5, frequency: freq_3x7, instructions: exercise3Week3Instructions, tips: exercise3Week3Tips, exerciseNumber: "Exercise 3")!)
-        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Bowl Swallows", duration: duration_15times, frequency: freq_3x7, instructions: exercise4Week3Instructions, tips: exercise4Week3Tips, exerciseNumber: "Exercise 4")!)
+        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week3Instructions, tips: exercise1Week3Tips, exerciseNumber: "Exercise 1", videoURL: "video/tonguetiptaps")!)
+        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Pull Backs", duration: duration_20times, frequency: freq_3x7, instructions: exercise2Week3Instructions, tips: exercise2Week3Tips, exerciseNumber: "Exercise 2", videoURL: "video/tonguepullbacks")!)
+        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Straw Swallows", duration: duration_15times5x5x5, frequency: freq_3x7, instructions: exercise3Week3Instructions, tips: exercise3Week3Tips, exerciseNumber: "Exercise 3", videoURL: "video/strawswallowswith")!)
+        
+        //WHY ARE THERE TWO VIDEOS - WITH AND WITHOUT
+        
+        week3Exercises.append(Exercise(numTimesCompleted: 0, title: "Bowl Swallows", duration: duration_15times, frequency: freq_3x7, instructions: exercise4Week3Instructions, tips: exercise4Week3Tips, exerciseNumber: "Exercise 4", videoURL: "video/bowlswallows")!)
         
         return week3Exercises
     }
     
     func createWeek4Exercises() -> [Exercise]{
-        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "K-EE-L Rolls", duration: duration_15times, frequency: freq_3x7, instructions: exercise1Week4Instructions, tips: exercise1Week4Tips, exerciseNumber: "Exercise 1")!)
-        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "Soft Food Swallows", duration: duration_15times, frequency: freq_3x7, instructions: exercise2Week4Instructions, tips: exercise2Week4Tips, exerciseNumber: "Exercise 2")!)
-        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "3-Swallow Drinking", duration: duration_regular, frequency: freq_3x7, instructions: exercise3Week4Instructions, tips: exercise3Week4Tips, exerciseNumber: "Exercise 3")!)
+        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "K-EE-L Rolls", duration: duration_15times, frequency: freq_3x7, instructions: exercise1Week4Instructions, tips: exercise1Week4Tips, exerciseNumber: "Exercise 1", videoURL: "video/keeltongueroll")!)
+        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "Soft Food Swallows", duration: duration_15times, frequency: freq_3x7, instructions: exercise2Week4Instructions, tips: exercise2Week4Tips, exerciseNumber: "Exercise 2", videoURL: "video/softfoodswallows")!)
+        week4Exercises.append(Exercise(numTimesCompleted: 0, title: "3-Swallow Drinking", duration: duration_regular, frequency: freq_3x7, instructions: exercise3Week4Instructions, tips: exercise3Week4Tips, exerciseNumber: "Exercise 3", videoURL: "video/3swallowdrinking")!)
         
         return week4Exercises
     }
     
     func createWeek5Exercises() -> [Exercise]{
-        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "Suck and Swallow", duration: duration_20times10x10, frequency: freq_3x7, instructions: exercise1Week5Instructions, tips: exercise1Week5Tips, exerciseNumber: "Exercise 1")!)
-        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "1-Swallow Drinking", duration: duration_15times, frequency: freq_3x7, instructions: exercise2Week5Instructions, tips: exercise2Week5Tips, exerciseNumber: "Exercise 2")!)
-        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_5foods, frequency: freq_7days, instructions: exercise3Week5Instructions, tips: exercise3Week5Tips, exerciseNumber: "Exercise 3")!)
+        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "Suck and Swallow", duration: duration_20times10x10, frequency: freq_3x7, instructions: exercise1Week5Instructions, tips: exercise1Week5Tips, exerciseNumber: "Exercise 1", videoURL: "video/suckandswallowquiet")!)
+        //TWO VIDEOS - QUIET AND SQUEAKY
+        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "1-Swallow Drinking", duration: duration_15times, frequency: freq_3x7, instructions: exercise2Week5Instructions, tips: exercise2Week5Tips, exerciseNumber: "Exercise 2", videoURL: "video/1swallowdrinking")!)
+        week5Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_5foods, frequency: freq_7days, instructions: exercise3Week5Instructions, tips: exercise3Week5Tips, exerciseNumber: "Exercise 3", videoURL: "video/eating")!)
         
         
         return week5Exercises
     }
     
     func createWeek6Exercises() -> [Exercise]{
-        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week6Instructions, tips: exercise1Week6Tips, exerciseNumber: "Exercise 1")!)
-        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week6Instructions, tips: exercise2Week6Tips, exerciseNumber: "Exercise 2")!)
-        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week6Instructions, tips: exercise3Week6Tips, exerciseNumber: "Exercise 3")!)
+        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week6Instructions, tips: exercise1Week6Tips, exerciseNumber: "Exercise 1", videoURL: "video/eating")!)
+        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week6Instructions, tips: exercise2Week6Tips, exerciseNumber: "Exercise 2", videoURL: "video/drinking")!)
+        week6Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week6Instructions, tips: exercise3Week6Tips, exerciseNumber: "Exercise 3", videoURL: "video/salivaswallows")!)
         week6Exercises.append(Exercise(numTimesCompleted: 0, title: "30 Minute Drinking", duration: duration_30min, frequency: freq_1x7, instructions: exercise4Week6Instructions, tips: exercise4Week6Tips, exerciseNumber: "Exercise 4")!)
+        //NO VIDEO??
         
         return week6Exercises
     }
     
     func createWeek7Exercises() -> [Exercise]{
-        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week7Instructions, tips: exercise1Week7Tips, exerciseNumber: "Exercise 1")!)
-        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week7Instructions, tips: exercise2Week7Tips, exerciseNumber: "Exercise 2")!)
-        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week7Instructions, tips: exercise3Week7Tips, exerciseNumber: "Exercise 3")!)
+        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week7Instructions, tips: exercise1Week7Tips, exerciseNumber: "Exercise 1", videoURL: "video/eating")!)
+        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week7Instructions, tips: exercise2Week7Tips, exerciseNumber: "Exercise 2", videoURL: "video/drinking")!)
+        week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week7Instructions, tips: exercise3Week7Tips, exerciseNumber: "Exercise 3", videoURL: "video/salivaswallows")!)
         week7Exercises.append(Exercise(numTimesCompleted: 0, title: "30 Minute Drinking", duration: duration_30min, frequency: freq_1x7, instructions: exercise4Week7Instructions, tips: exercise4Week7Tips, exerciseNumber: "Exercise 4")!)
+        //NO VIDEO?
+        
         week7Exercises.append(Exercise(numTimesCompleted: 0, title: "Sleep Swallowing", duration: duration_beforeSleep, frequency: freq_1x7, instructions: exercise5Week7Instructions, tips: exercise5Week7Tips, exerciseNumber: "Exercise 5")!)
+        //NO  VIDEO??
         
         return week7Exercises
     }
     
     func createWeek8Exercises() -> [Exercise]{
-        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week8Instructions, tips: exercise1Week8Tips, exerciseNumber: "Exercise 1")!)
-        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week8Instructions, tips: exercise2Week8Tips, exerciseNumber: "Exercise 2")!)
-        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week8Instructions, tips: exercise3Week8Tips, exerciseNumber: "Exercise 3")!)
+        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week8Instructions, tips: exercise1Week8Tips, exerciseNumber: "Exercise 1", videoURL: "video/eating")!)
+        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week8Instructions, tips: exercise2Week8Tips, exerciseNumber: "Exercise 2", videoURL: "video/drinking")!)
+        week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Saliva Swallows", duration: duration_1min, frequency: freq_3x7, instructions: exercise3Week8Instructions, tips: exercise3Week8Tips, exerciseNumber: "Exercise 3", videoURL: "video/salivaswallows")!)
         week8Exercises.append(Exercise(numTimesCompleted: 0, title: "30 Minute Drinking", duration: duration_30min, frequency: freq_1x7, instructions: exercise4Week8Instructions, tips: exercise4Week8Tips, exerciseNumber: "Exercise 4")!)
+        //no video
+        
         week8Exercises.append(Exercise(numTimesCompleted: 0, title: "Sleep Swallowing", duration: duration_beforeSleep, frequency: freq_1x7, instructions: exercise5Week8Instructions, tips: exercise5Week8Tips, exerciseNumber: "Exercise 5")!)
+        //no video
         
         return week8Exercises
     }
     
     func createWeek9Exercises() -> [Exercise]{
-        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week9Instructions, tips: exercise1Week9Tips, exerciseNumber: "Exercise 1")!)
-        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week9Instructions, tips: exercise2Week9Tips, exerciseNumber: "Exercise 2")!)
-        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "100 Saliva Swallows", duration: duration_100, frequency: freq_3x7, instructions: exercise3Week9Instructions, tips: exercise3Week9Tips, exerciseNumber: "Exercise 3")!)
+        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "Eating", duration: duration_eating, frequency: freq_3x7, instructions: exercise1Week9Instructions, tips: exercise1Week9Tips, exerciseNumber: "Exercise 1", videoURL: "video/eating")!)
+        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "Drinking", duration: duration_drinking, frequency: freq_3x7, instructions: exercise2Week9Instructions, tips: exercise2Week9Tips, exerciseNumber: "Exercise 2", videoURL: "video/drinking")!)
+        week9Exercises.append(Exercise(numTimesCompleted: 0, title: "100 Saliva Swallows", duration: duration_100, frequency: freq_3x7, instructions: exercise3Week9Instructions, tips: exercise3Week9Tips, exerciseNumber: "Exercise 3", videoURL: "video/salivaswallows")!)
         
         return week9Exercises
     }

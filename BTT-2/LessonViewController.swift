@@ -29,6 +29,10 @@ class LessonViewController: UIViewController {
         lbl_frequency.text = "Frequency: \(exercise.frequency)"
         lbl_instructions.text = exercise.instructions
         lbl_tips.text = exercise.tips
+        lbl_instructions.layer.cornerRadius = 10
+        lbl_tips.layer.cornerRadius = 10
+    //    lbl_instructions.layer.borderColor = [UIColor blackColor].CGColor
+        btn_playVideo.layer.cornerRadius = 10
        
     }
 

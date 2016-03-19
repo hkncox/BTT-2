@@ -9,10 +9,12 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        logInButton.layer.cornerRadius = 10
+        cancelButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Nicole Talley. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class User: NSObject{
     

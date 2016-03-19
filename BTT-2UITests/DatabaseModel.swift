@@ -8,7 +8,7 @@
 
 import Foundation
 
-import User
+
 protocol DatabaseProtocol: class {
     func itemsDownloaded(items: NSArray)
 }
@@ -67,9 +67,8 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
         
         for(var i = 0; i < jsonResult.count; i++)
         {
-            
-            jsonElement = jsonResult[i] as! NSDictionary
             let user = User()
+            jsonElement = jsonResult[i] as! NSDictionary
             
             //the following insures none of the JsonElement values are nil through optional binding
             if let firstName = jsonElement["First Name"] as? String,

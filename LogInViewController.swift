@@ -52,7 +52,7 @@ class LogInViewController: UIViewController,  UITextFieldDelegate, DatabaseProto
         
         for (var i = 0; i < users.count; i++){
             let selectedUser: User = users[i] 
-            if (selectedUser.email == text_email.text){
+            if (selectedUser.email!.uppercaseString == text_email.text!.uppercaseString){
                 if (selectedUser.password == text_password.text){
                     activeAccountType = selectedUser.accountType!
                     activeUser = selectedUser.email!

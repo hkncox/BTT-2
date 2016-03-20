@@ -62,10 +62,11 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     }
     
     // Catpure the picker view selection
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // This method is triggered whenever the user makes a change to the picker selection.
-        // The parameter named row and component represents what was selected.
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+      //  updateLabel()
     }
+   
     @IBAction func emailTextFieldSelected(sender: AnyObject)
     {
         text_email.keyboardType = UIKeyboardType.EmailAddress
@@ -113,9 +114,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_createPassword.enabled = false;
         text_confirmPassword.enabled = false;
         button_signUp.setTitle("Purchase", forState: UIControlState.Normal)
-        if ([picker_accountType.selectedRowInComponent(0)] == 0) //THERAPIST
+        let selectedValue = pickerData[picker_accountType.selectedRowInComponent(0)]
+        if (selectedValue == "Therapist") //THERAPIST
         {
-            label_error.text = "The price for therapist access is $149.00 Press Purchase to Continue"
+            label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
            
             //CHECK PAYMENT HERE. IF SUCCESSFUL
             // ADD TO DATABASE
@@ -129,7 +131,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         else //SINGLE USER
         {
             
-            label_error.text = "The price for single user access is $$$. Press Purchase to Continue"
+            label_error.text = "The price for single user access is $49.99. Press Purchase to Continue"
             
             //CHECK PAYMENT
             

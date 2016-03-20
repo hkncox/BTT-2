@@ -9,10 +9,11 @@
 
 import UIKit
 
-class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource
+class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, DatabaseProtocol
 {
     
     var users: [User] = [User]()
+    var selectedUser: User = User()
     @IBOutlet var text_email: UITextField!
     @IBOutlet var text_firstName: UITextField!
     @IBOutlet var text_lastName: UITextField!
@@ -22,16 +23,29 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var picker_accountType: UIPickerView!
     @IBOutlet var button_signUp: UIButton!
     @IBOutlet var button_clear: UIButton!
+    @IBOutlet var button_cancel: UIButton!
+    @IBOutlet var button_logIn: UIButton!
     var validated: Bool = false;
     var pickerData: [String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        button_cancel.layer.cornerRadius = 10
+        button_clear.layer.cornerRadius = 10
+        button_logIn.layer.cornerRadius = 10
+        button_signUp.layer.cornerRadius = 10
         self.picker_accountType.delegate = self
         self.picker_accountType.dataSource = self
         pickerData = ["Therapist", "Single User"]
+        let db = DatabaseModel()
+        db.delegate = self
+        db.downloadItems()
     }
-    
+    func itemsDownloaded(items: [User]) {
+        
+        users = items
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -101,14 +115,14 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         button_signUp.setTitle("Purchase", forState: UIControlState.Normal)
         if ([picker_accountType.selectedRowInComponent(0)] == 0) //THERAPIST
         {
-            label_error.text = "The price for therapist access is $$$. Press Purchase to Continue"
+            label_error.text = "The price for therapist access is $149.00 Press Purchase to Continue"
            
             //CHECK PAYMENT HERE. IF SUCCESSFUL
             // ADD TO DATABASE
            
             
-            
-          //  users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Therapist"))
+        
+         //   users.addObject(User(firstName: text_firstName.text!, lastName: text_lastName.text!, password: text_confirmPassword.text!, email: text_email.text!, accountType: "Therapist"))
          
       //      NSLog(users[0].firstName)
         }

@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol DatabaseProtocol: class {
-    func itemsDownloaded(items: NSArray)
+    func itemsDownloaded(items: [User])
 }
 
 
@@ -22,12 +22,12 @@ class DatabaseModel: NSObject, NSURLSessionDataDelegate {
     
     var data: NSMutableData = NSMutableData()
     
-    let urlPath: String = "http://www.utahscommunicationconnection.com/service.php"
+  //  let urlPath: String = "http://www.utahscommunicationconnection.com/service.php"
 
 
 func downloadItems() {
     
-    let url: NSURL = NSURL(string: urlPath)!
+    let url: NSURL = NSURL(string: "http://www.utahscommunicationconnection.com/service.php")!
     var session: NSURLSession!
     let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
     session = NSURLSession(configuration: configuration, delegate: self, delegateQueue: nil)
@@ -63,30 +63,34 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
         }
         
         var jsonElement: NSDictionary = NSDictionary()
-        let users: NSMutableArray = NSMutableArray()
+        var users: [User] = [User]()
         
         for(var i = 0; i < jsonResult.count; i++)
         {
-            let user = User()
+           // let user = User()
             jsonElement = jsonResult[i] as! NSDictionary
             
             //the following insures none of the JsonElement values are nil through optional binding
-            if let firstName = jsonElement["First Name"] as? String,
-                let lastName = jsonElement["Last Name"] as? String,
-                let email = jsonElement["Email Address"] as? String,
-                let password = jsonElement["Password"] as? String,
-                let accountType = jsonElement["Account Type"] as? String
-            {
-                
-                user.firstName = firstName
+            guard let firstName = jsonElement["firstName"] as? String,
+               lastName = jsonElement["lastName"] as? String,
+                email = jsonElement["email"] as? String,
+               password = jsonElement["password"] as? String,
+                accountType = jsonElement["accountType"] as? String
+                else{
+                    print("error")
+                    return
+            }
+            
+                users.append(User(firstName: firstName, lastName: lastName, email: email, password: password, accountType: accountType))
+           /*     user.firstName = firstName
                 user.lastName = lastName
                 user.email = email
                 user.password = password
                 user.accountType = accountType
-                
-            }
+                */
             
-            users.addObject(user)
+            
+         //   users.addObject(user)
             
         }
         

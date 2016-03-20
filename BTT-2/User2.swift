@@ -19,7 +19,7 @@ class User: NSObject{
     //patient/therapist relationship maybe needs to be in release #2
     override init(){
     }
-    init(firstName: String, lastName: String, password: String, email: String, accountType: String){
+    init(firstName: String, lastName: String,  email: String, password: String, accountType: String){
         self.firstName = firstName
         self.lastName = lastName
         self.password = password

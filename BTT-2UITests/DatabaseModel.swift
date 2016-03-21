@@ -73,15 +73,45 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
             //the following insures none of the JsonElement values are nil through optional binding
             guard let firstName = jsonElement["firstName"] as? String,
                lastName = jsonElement["lastName"] as? String,
-                email = jsonElement["email"] as? String,
-               password = jsonElement["password"] as? String,
+          //      email = jsonElement["email"] as? String,
+            //   password = jsonElement["password"] as? String,
                 accountType = jsonElement["accountType"] as? String
                 else{
                     print("error")
                     return
+                }
+                if (accountType == "Therapist")
+                {
+                    guard let email = jsonElement["email"] as? String,
+                    let password = jsonElement["password"] as? String
+                        else{
+                            print("error")
+                            return
+                        }
+                    users.append(Therapist(firstName: firstName, lastName: lastName, accountType: "Therapist", email: email, password: password ))
+                    
+                }
+                if (accountType == "Single User")
+                {
+                    guard let email = jsonElement["email"] as? String,
+                        let password = jsonElement["password"] as? String
+                        else{
+                            print("error")
+                            return
+                        }
+                    users.append(SingleUser(firstName: firstName, lastName: lastName, accountType: "Single User", email: email, password: password ))
+                
+                }
+            if (accountType == "Patient"){
+                guard let accessCode = jsonElement["accessCode"] as? String,
+                let therapistID = jsonElement["therapistID"] as? String
+                    else{
+                          print("error")
+                            return
+                    }
+                users.append(Patient(firstName: firstName, lastName: lastName, accountType: "Patient", accessCode: accessCode, therapistID: therapistID ))
             }
-            
-                users.append(User(firstName: firstName, lastName: lastName, email: email, password: password, accountType: accountType))
+               // users.append(User(firstName: firstName, lastName: lastName, email: email, password: password, accountType: accountType))
            /*     user.firstName = firstName
                 user.lastName = lastName
                 user.email = email

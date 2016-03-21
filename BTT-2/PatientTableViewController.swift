@@ -8,14 +8,17 @@
 
 import UIKit
 
-class LessonTableViewController: UITableViewController{
+class PatientLessonTableViewController: UITableViewController{
 
     @IBOutlet weak var tblLessons: UITableView!
-   
-    
+    @IBOutlet var lbl_title: UILabel!
+    @IBOutlet var btn_logOut: UIButton!
+    var user: User = User()
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        btn_logOut.layer.cornerRadius = 10
+        let name: String = "\(user.firstName!)"
+        lbl_title.text = "\(name)'s Tongue Thrust Therapy Program"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -45,7 +48,12 @@ class LessonTableViewController: UITableViewController{
         cell.btn_exercise2.tag = indexPath.row
         cell.btn_exercise3.tag = indexPath.row
         cell.label_weekNum.text = week.weekNumber
-        cell.label_complete.text = "\(week.complete)"
+        if (week.complete == true){
+        cell.label_complete.text = "Complete"
+        }
+        else{
+        cell.label_complete.text = "Not Complete"
+        }
         // Configure the cell...
 
         return cell

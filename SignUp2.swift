@@ -117,6 +117,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         let selectedValue = pickerData[picker_accountType.selectedRowInComponent(0)]
         if (selectedValue == "Therapist") //THERAPIST
         {
+            label_error.textColor = UIColor.blackColor()
             label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
            
             //CHECK PAYMENT HERE. IF SUCCESSFUL
@@ -130,7 +131,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         }
         else //SINGLE USER
         {
-            
+               label_error.textColor = UIColor.blackColor()
             label_error.text = "The price for single user access is $49.99. Press Purchase to Continue"
             
             //CHECK PAYMENT

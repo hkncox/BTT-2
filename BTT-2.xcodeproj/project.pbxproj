@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		246C8BA81C6BFFE900A899B5 /* learnmore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C8BA71C6BFFE900A899B5 /* learnmore.swift */; };
 		544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A21C70F8FA004FAD76 /* LessonTableViewCell.swift */; };
-		544AD3A51C70F90D004FAD76 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A41C70F90D004FAD76 /* LessonTableViewController.swift */; };
+		544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A41C70F90D004FAD76 /* PatientTableViewController.swift */; };
 		544AD3A71C70F926004FAD76 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A61C70F926004FAD76 /* LessonViewController.swift */; };
 		544AD3AB1C70F970004FAD76 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3AA1C70F970004FAD76 /* Exercise.swift */; };
 		544AD3AD1C70F9AF004FAD76 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3AC1C70F9AF004FAD76 /* Week.swift */; };
@@ -22,6 +22,7 @@
 		54B0C2761C9DC5DF004E8B85 /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCF531C934D8300F269A1 /* DatabaseModel.swift */; };
 		54B0C2771C9DC5EB004E8B85 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCF041C83744900F269A1 /* LogInViewController.swift */; };
 		54B0C2781C9DC609004E8B85 /* User2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCF551C9350FC00F269A1 /* User2.swift */; };
+		54B0C28D1C9F4841004E8B85 /* TherapistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C28C1C9F4841004E8B85 /* TherapistTableViewController.swift */; };
 		54BB87D11C4C3C1800DADA1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */; };
 		54BB87D61C4C3C1800DADA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BB87D41C4C3C1800DADA1E /* Main.storyboard */; };
 		54BB87D81C4C3C1800DADA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB87D71C4C3C1800DADA1E /* Assets.xcassets */; };
@@ -54,7 +55,7 @@
 /* Begin PBXFileReference section */
 		246C8BA71C6BFFE900A899B5 /* learnmore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnmore.swift; sourceTree = "<group>"; };
 		544AD3A21C70F8FA004FAD76 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
-		544AD3A41C70F90D004FAD76 /* LessonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		544AD3A41C70F90D004FAD76 /* PatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewController.swift; sourceTree = "<group>"; };
 		544AD3A61C70F926004FAD76 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		544AD3AA1C70F970004FAD76 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = ../Exercise.swift; sourceTree = "<group>"; };
 		544AD3AC1C70F9AF004FAD76 /* Week.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Week.swift; path = ../Week.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		549DCF531C934D8300F269A1 /* DatabaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseModel.swift; path = "BTT-2UITests/DatabaseModel.swift"; sourceTree = SOURCE_ROOT; };
 		549DCF551C9350FC00F269A1 /* User2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User2.swift; sourceTree = "<group>"; };
 		54B0C2711C95F646004E8B85 /* Homepage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		54B0C28C1C9F4841004E8B85 /* TherapistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistTableViewController.swift; sourceTree = "<group>"; };
 		54BB87CD1C4C3C1800DADA1E /* BTT-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTT-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BB87D51C4C3C1800DADA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 				544AD3AC1C70F9AF004FAD76 /* Week.swift */,
 				544AD3AA1C70F970004FAD76 /* Exercise.swift */,
 				544AD3AE1C70FF9D004FAD76 /* LessonCreator.swift */,
-				544AD3A41C70F90D004FAD76 /* LessonTableViewController.swift */,
+				544AD3A41C70F90D004FAD76 /* PatientTableViewController.swift */,
+				54B0C28C1C9F4841004E8B85 /* TherapistTableViewController.swift */,
 				544AD3A21C70F8FA004FAD76 /* LessonTableViewCell.swift */,
 				544AD3A61C70F926004FAD76 /* LessonViewController.swift */,
 			);
@@ -335,10 +338,11 @@
 				549DCE2D1C7A73B800F269A1 /* SignUp2.swift in Sources */,
 				246C8BA81C6BFFE900A899B5 /* learnmore.swift in Sources */,
 				544AD3AB1C70F970004FAD76 /* Exercise.swift in Sources */,
-				544AD3A51C70F90D004FAD76 /* LessonTableViewController.swift in Sources */,
+				544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */,
 				544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */,
 				544AD3A71C70F926004FAD76 /* LessonViewController.swift in Sources */,
 				54B0C2761C9DC5DF004E8B85 /* DatabaseModel.swift in Sources */,
+				54B0C28D1C9F4841004E8B85 /* TherapistTableViewController.swift in Sources */,
 				544AD3AD1C70F9AF004FAD76 /* Week.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

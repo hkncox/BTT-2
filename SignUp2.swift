@@ -64,7 +64,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     // Catpure the picker view selection
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-      //  updateLabel()
+    
     }
    
     @IBAction func emailTextFieldSelected(sender: AnyObject)

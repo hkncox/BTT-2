@@ -17,14 +17,10 @@ class TherapistLessonTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_logOut.layer.cornerRadius = 10
+       
         if (user.accountType != "Therapist"){
             btn_addUser.hidden = true
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     override func viewWillAppear(animated: Bool) {
         
@@ -45,10 +41,21 @@ class TherapistLessonTableViewController: UITableViewController{
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("lessonCell") as! LessonTableViewCell
         let week: Week = sharedInstance.weeks[indexPath.row]
+        cell.label_weekNum.text = week.weekNumber
         cell.btn_exercise1.tag = indexPath.row
         cell.btn_exercise2.tag = indexPath.row
         cell.btn_exercise3.tag = indexPath.row
-        cell.label_weekNum.text = week.weekNumber
+        if (week.exercises.count > 3){
+        cell.btn_exercise4.tag = indexPath.row
+        }
+        if (week.exercises.count > 4){
+        cell.btn_exercise5.tag = indexPath.row
+        }
+        else if (week.exercises.count <= 3){
+            cell.btn_exercise4.hidden = true
+            cell.btn_exercise5.hidden = true
+        }
+        
                // Configure the cell...
         
         return cell
@@ -115,6 +122,20 @@ class TherapistLessonTableViewController: UITableViewController{
             let selectedIndex : Int = btnExercise.tag
             let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[2]
+        }
+        if(segue.identifier == "segue_exercise4")
+        {
+            let btnExercise : UIButton = sender as! UIButton
+            let selectedIndex : Int = btnExercise.tag
+            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[3]
+        }
+        if(segue.identifier == "segue_exercise5")
+        {
+            let btnExercise : UIButton = sender as! UIButton
+            let selectedIndex : Int = btnExercise.tag
+            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[4]
         }
     }
     

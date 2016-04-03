@@ -27,7 +27,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var button_logIn: UIButton!
     var validated: Bool = false;
     var pickerData: [String] = [String]()
-    
+  //  var db: DatabaseModel = DatabaseModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         button_cancel.layer.cornerRadius = 10
@@ -36,6 +36,11 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         button_signUp.layer.cornerRadius = 10
         self.picker_accountType.delegate = self
         self.picker_accountType.dataSource = self
+        text_firstName.autocorrectionType = .No
+        text_lastName.autocorrectionType = .No
+        text_createPassword.autocorrectionType = .No
+        text_email.autocorrectionType = .No
+        text_confirmPassword.autocorrectionType = .No
         pickerData = ["Therapist", "Single User"]
         let db = DatabaseModel()
         db.delegate = self
@@ -121,13 +126,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
             label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
            
             //CHECK PAYMENT HERE. IF SUCCESSFUL
-            // ADD TO DATABASE
-           
-            
+         //     let dataDictionary:[String:String] = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Therapist"]
+          //   db.addToDB(dataDictionary)
+          //  db.
         
-         //   users.addObject(User(firstName: text_firstName.text!, lastName: text_lastName.text!, password: text_confirmPassword.text!, email: text_email.text!, accountType: "Therapist"))
-         
-      //      NSLog(users[0].firstName)
         }
         else //SINGLE USER
         {
@@ -136,15 +138,14 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
             
             //CHECK PAYMENT
             
-            //ADD TO DATABASE
-            
-            // users.append(User(_firstName: text_firstName.text!, _lastName: text_lastName.text!, _userName: text_confirmUserName.text!, _password: text_confirmPassword.text!, _email: text_email.text!, _accountType: "Single User"))
+     //       let dataDictionary:[String:String] = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Single User"]
+         //   db.addToDB(dataDictionary)
           
         }
         
     }
-    /*func addToDB(){
-        var dataDictionary:[String:String?] = [ "firstName" : text_firstName.text, "lastName" : text_lastName.text, "email" : text_email.text, "password" : text_createPassword.text, "accountType" : picker_accountType.selectedRowInComponent]
+   /* func addToDB(){
+        var dataDictionary:[String:String?] = [ "firstName" : text_firstName.text, "lastName" : text_lastName.text, "email" : text_email.text, "password" : text_createPassword.text, "accountType" : pickerData[picker_accountType.selectedRowInComponent(0)]]
         
         var data:NSData = NSJSONSerialization.dataWithJSONObject(dataDictionary, options: nil, error: nil)!
         request.HTTPBody = data

@@ -45,6 +45,14 @@ class TherapistLessonTableViewController: UITableViewController{
         cell.btn_exercise1.tag = indexPath.row
         cell.btn_exercise2.tag = indexPath.row
         cell.btn_exercise3.tag = indexPath.row
+        if (week.exercises.count == 1){
+            cell.btn_exercise2.hidden = true
+            cell.btn_exercise4.hidden = true
+            cell.btn_exercise5.hidden = true
+            cell.btn_exercise3.hidden = true
+            cell.btn_exercise1.setTitle("Resting Position", forState: UIControlState.Normal)
+            cell.label_complete.text = ""
+        }
         if (week.exercises.count > 3){
         cell.btn_exercise4.tag = indexPath.row
         }

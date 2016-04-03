@@ -12,6 +12,7 @@ class Week{
     var weekNumber: String?
     var exercises = [Exercise]()
     var complete: Bool?
+  //  var exercise = Exercise()
     
     init? (weekNumber: String, exercises: [Exercise], complete: Bool)
     {
@@ -24,5 +25,6 @@ class Week{
         self.weekNumber = weekNumber
         self.exercises = exercises
     }
+
     
 }

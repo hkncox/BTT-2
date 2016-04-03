@@ -50,6 +50,95 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
     }
     
 }
+/*    func addToDB(dict: [String:String]){
+    
+            
+            // Create a request
+            let url:NSURL = NSURL(string: "http://www.utahscommunicationconnection.com/postService.php")!
+            
+            let request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
+            
+            // Configure the request
+            request.HTTPMethod = "POST"
+            
+      //      var dataDictionary:[String:String] = [ "Email" : email, "Password" : password, "FirstName" : firstname, "LastName" : lastname, "DateOfBirth" : dob, "Gender" : gender, "QuestionId" : questionId, "Answer" : answer]
+        var err: NSError?
+        var data: NSData = NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions.PrettyPrinted, error:
+            &err)
+        if (err){
+            NSLog("Failure to serialize")
+        }
+            request.HTTPBody = data
+        
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            // Create a NSURLSession task with completion handler
+     
+            var session: NSURLSession!
+            let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+            session = NSURLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+        let task = session.dataTaskWithRequest(request, completionHandler: { (data:NSData?, response:NSURLResponse?, error:NSError?) -> Void in
+            
+                let response:[String:String] = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! [String:String]
+                
+                // Check if there was an error
+                if let result = response["isRegistered"] {
+                    
+                    if result == "1" {
+                        //NSLog("Inserted")
+                        NSLog("Registration Successful")
+                        
+                        dispatch_async(dispatch_get_main_queue()) {
+                            
+                            //self.performSegueWithIdentifier("loginSegue", sender: self)
+                            self.performSegueWithIdentifier("cancelSegue", sender: self)
+                            
+                            
+                        }
+                    }
+                    else {
+                        NSLog("Registration Failed")
+                        
+                        dispatch_async(dispatch_get_main_queue()) {
+                            
+                            //self.showAllert(result)
+                            
+                        }
+                    }
+                }
+            })
+            
+            task.resume()
+        }
+*/       /* var data:NSData = NSJSONSerialization.dataWithJSONObject(data: dict, options: nil, error: nil)!
+        request.HTTPBody = data
+        
+        NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+        
+        NSURL * url = [NSURL URLWithString:@"http://www.utahscommunicationconnection.com/postService.php"];
+        NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:url];
+        [urlRequest setHTTPMethod:@"POST"];
+        [urlRequest setHTTPBody:[noteDataString dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:urlRequest completionHandler:^(NSData *dataRaw, NSURLResponse *header, NSError *error) {
+        NSDictionary *json = [NSJSONSerialization
+        JSONObjectWithData:dataRaw
+        options:kNilOptions error:&error];
+        NSString *status = json[@"status"];
+        
+        if([status isEqual:@"1"]){
+        //Success
+        
+        } else {
+        //Error
+        
+        }
+        }];
+        
+        [dataTask resume];*/
+    
+
     func parseJSON() {
         
         var jsonResult: NSMutableArray = NSMutableArray()

@@ -18,7 +18,7 @@ class Exercise{
   //  var video: AVPlayerViewController
     var exerciseNumber: String
     var videoURL: String?
-    
+   
     init?(numTimesCompleted: Int, title: String, duration: String, frequency: String, instructions: String, tips: String, exerciseNumber: String, videoURL: String)
     {
         

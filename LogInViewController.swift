@@ -25,12 +25,15 @@ class LogInViewController: UIViewController,  UITextFieldDelegate, DatabaseProto
     var loggedInUser: User = User()
     override func viewDidLoad() {
         super.viewDidLoad()
+        text_email.autocorrectionType = .No
+        text_password.autocorrectionType = .No
         logInButton.layer.cornerRadius = 10
         cancelButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
         let db = DatabaseModel()
         db.delegate = self
         db.downloadItems()
+        
     }
 
     override func didReceiveMemoryWarning() {

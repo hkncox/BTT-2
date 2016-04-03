@@ -20,6 +20,7 @@ class LessonCreator: NSObject{
     }
     
     var weeks = [Week]()
+    var restingPosition = [Exercise]()
     var week1Exercises = [Exercise]()
     var week2Exercises = [Exercise]()
     var week3Exercises = [Exercise]()
@@ -32,6 +33,7 @@ class LessonCreator: NSObject{
     
     
     /* duration */
+    var frequently: String = "Constantly"
     var duration_30sec: String = "30 Seconds"
     var duration_10times: String = "10 times on each side of your tongue (20 strokes total)"
     var duration_10x10: String = "10 times for 10 seconds each time"
@@ -53,7 +55,7 @@ class LessonCreator: NSObject{
     var freq_3x7: String = "Three times a day for seven days"
     var freq_7days: String = "7 days"
     var freq_1x7: String = "Once a day for 7 days"
-    
+    var always: String = "All the time"
     
     
     /* Week 1 */
@@ -181,7 +183,10 @@ class LessonCreator: NSObject{
     
     
     
-    
+    func createRestingPosition() -> [Exercise]{
+        restingPosition.append(Exercise(numTimesCompleted: 0, title: "Resting Position", duration: frequently, frequency: always, instructions: "Resting Position is frequently mentioned throughout the Bust the Thrust program.", tips: exercise4Week7Tips, exerciseNumber: "", videoURL: "video/restingposition")!)
+        return restingPosition
+    }
     
     func createWeek1Exercises () -> [Exercise]{
         week1Exercises.append(Exercise(numTimesCompleted: 0, title: "Tongue Tip Taps", duration: duration_30sec, frequency: freq_3x7, instructions: exercise1Week1Instructions, tips: exercise1Week1Tips, exerciseNumber: "Exercise 1", videoURL:"video/tonguetiptaps")!)
@@ -278,6 +283,7 @@ class LessonCreator: NSObject{
     
     
     func createWeeks() {
+        weeks.append(Week(weekNumber: "Getting Started", exercises: createRestingPosition(), complete: false)!)
         weeks.append(Week(weekNumber: "Week 1", exercises: createWeek1Exercises(), complete: false)!)
         weeks.append(Week(weekNumber: "Week 2", exercises: createWeek2Exercises(), complete: false)!)
         weeks.append(Week(weekNumber: "Week 3", exercises: createWeek3Exercises(), complete: false)!)

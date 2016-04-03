@@ -87,24 +87,25 @@ class Patient: User{
         super.init(firstName: firstName, lastName: lastName, accountType: accountType)
         self.accessCode = accessCode
         self.therapistID = therapistID
-      /*  for (var i = 0; i < THREE; i++){
-            self.week1Complete![i] = false
-            self.week2Complete![i] = false
-            self.week3Complete![i] = false
-            self.week4Complete![i] = false
-            self.week5Complete![i] = false
-            self.week6Complete![i] = false
-            self.week7Complete![i] = false
-            self.week8Complete![i] = false
-            self.week9Complete![i] = false
+     /*  for (var i = 0; i < THREE; i++){
+        //need to download progress from server and load here
+            week1Complete![i] = false
+            week2Complete![i] = false
+            week3Complete![i] = false
+            week4Complete![i] = false
+            week5Complete![i] = false
+            week6Complete![i] = false
+            week7Complete![i] = false
+            week8Complete![i] = false
+            week9Complete![i] = false
         }
-        self.week2Complete![THREE] = false
-        self.week3Complete![THREE] = false
-        self.week6Complete![THREE] = false
-        self.week7Complete![THREE] = false
-        self.week7Complete![THREE + 1] = false
-        self.week8Complete![THREE] = false
-        self.week8Complete![THREE + 1] = false*/
+        week2Complete![THREE] = false
+        week3Complete![THREE] = false
+        week6Complete![THREE] = false
+        week7Complete![THREE] = false
+        week7Complete![THREE + 1] = false
+        week8Complete![THREE] = false
+        week8Complete![THREE + 1] = false*/
     }
     
 }

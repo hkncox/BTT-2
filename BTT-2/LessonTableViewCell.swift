@@ -14,12 +14,14 @@ class LessonTableViewCell: UITableViewCell {
     @IBOutlet weak var label_weekNum: UILabel!
     @IBOutlet weak var btn_exercise1: UIButton!
 
+    @IBOutlet weak var btn_exercise5: UIButton!
     @IBOutlet weak var btn_exercise4: UIButton!
+  //  @IBOutlet weak var btn_exercise4: UIButton!
     @IBOutlet weak var btn_exercise2: UIButton!
     @IBOutlet weak var btn_exercise3: UIButton!
     @IBOutlet weak var label_complete: UILabel!
    
-    @IBOutlet weak var btn_exercise5: UIButton!
+  //  @IBOutlet weak var btn_exercise5: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         btn_exercise1.layer.cornerRadius = 10

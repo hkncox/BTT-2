@@ -20,7 +20,7 @@ class LessonCreator: NSObject{
     }
     
     var weeks = [Week]()
-    var restingPosition = [Exercise]()
+    var gettingStarted = [Exercise]()
     var week1Exercises = [Exercise]()
     var week2Exercises = [Exercise]()
     var week3Exercises = [Exercise]()
@@ -184,8 +184,10 @@ class LessonCreator: NSObject{
     
     
     func createRestingPosition() -> [Exercise]{
-        restingPosition.append(Exercise(numTimesCompleted: 0, title: "Resting Position", duration: frequently, frequency: always, instructions: "Resting Position is frequently mentioned throughout the Bust the Thrust program.", tips: exercise4Week7Tips, exerciseNumber: "", videoURL: "video/restingposition")!)
-        return restingPosition
+        gettingStarted.append(Exercise(numTimesCompleted: 0, title: "Resting Position", duration: frequently, frequency: always, instructions: "Resting Position is frequently mentioned throughout the Bust the Thrust program. View the video for more information.", tips: exercise4Week7Tips, exerciseNumber: "", videoURL: "video/restingposition")!)
+        gettingStarted.append(Exercise(numTimesCompleted: 0, title: "The Spot", duration: "", frequency: "", instructions: "Many times while completing the exercises in this program 'The Spot' is mentioned. 'The Spot', also referred to as 'The Bumpy Spot', or the 'Alveolar Ridge', is located directly behind your top front teeth. While completing the exercises that direct you toward 'The Spot', place the tip of your tongue on the bumpy spot behind your top front teeth. While placing the tip of your tongue on 'The Spot', make sure that your tongue is not touching or pushing against your teeth in any way.", tips: "", exerciseNumber: "Where is 'The Spot?'")!)
+     
+        return gettingStarted
     }
     
     func createWeek1Exercises () -> [Exercise]{

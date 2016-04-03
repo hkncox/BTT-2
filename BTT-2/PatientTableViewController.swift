@@ -50,8 +50,8 @@ class PatientLessonTableViewController: UITableViewController{
         cell.btn_exercise4.tag = indexPath.row
         cell.btn_exercise5.tag = indexPath.row
         cell.label_weekNum.text = week.weekNumber
-        if (week.exercises.count == 1){
-            cell.btn_exercise2.hidden = true
+        if (week.weekNumber == "Getting Started"){
+            cell.btn_exercise2.setTitle("The Spot", forState: UIControlState.Normal)
             cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
             cell.btn_exercise3.hidden = true

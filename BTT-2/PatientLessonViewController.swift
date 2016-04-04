@@ -10,10 +10,31 @@ class PatientLessonViewController: UIViewController {
     @IBOutlet weak var lbl_frequency: UILabel!
     @IBOutlet weak var lbl_instructions: UITextView!
     @IBOutlet weak var lbl_tips: UITextView!
-    
-    
-    @IBOutlet weak var btn_playVideo: UIButton!
+    @IBOutlet weak var toggle_Sunday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Monday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Tuesday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Wednesday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Thursday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Friday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Saturday1: UISegmentedControl!
+    @IBOutlet weak var toggle_Sunday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Monday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Tuesday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Wednesday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Thursday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Friday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Saturday2: UISegmentedControl!
+    @IBOutlet weak var toggle_Sunday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Monday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Tuesday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Wednesday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Thursday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Friday3: UISegmentedControl!
+    @IBOutlet weak var toggle_Saturday3: UISegmentedControl!
+ 
+  @IBOutlet weak var btn_playVideo: UIButton!
     var exercise: Exercise!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
@@ -26,13 +47,13 @@ class PatientLessonViewController: UIViewController {
         //    lbl_instructions.layer.borderColor = [UIColor blackColor].CGColor
         btn_playVideo.layer.cornerRadius = 10
         
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue,

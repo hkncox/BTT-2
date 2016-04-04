@@ -63,7 +63,7 @@ class learnmore: UITableViewController
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let smallHeight: CGFloat = 50.0
-        let expandedHeight: CGFloat = 225.0
+        let expandedHeight: CGFloat = 300.0
         let ip = indexPath
         if selectedIndexPath != nil {
             if ip == selectedIndexPath! {
@@ -80,6 +80,7 @@ class learnmore: UITableViewController
         learnMoreInfo.append(LearnMoreInfo(title: "What is a Tongue Thrust?", details: "A tongue thrust, otherwise known as an orofacial myofunctional disorder, occurs when the tongue moves forward in an exaggerated way during speech and/or swallowing. \nThe tongue may lie too far forward during rest or may protrude between the upper and lower teeth during speech and swallowing, and at rest. \nA person typically swallows between 1,200 and 2,000 times within a 24 hour time period with about four pounds of pressure each time. If a person suffers from a tongue thrust, this continuous pressure tends to force the teeth out of alignment. \nMany orthodontists complete orthodontic treatment with what appears to be good results, only to discover that the case relapses because of the patient's tongue thrust. \n If the tongue is allowed to continue its pushing action against the teeth, it will continue to push the teeth forward and reverse any orthodontic work performed."))
         learnMoreInfo.append(LearnMoreInfo(title: "Signs and Symptoms", details: "You might have a tongue thrust if: \n1) Your tongue protrudes between/against your front teeth when forming s, z, t, d, n, l, sh\n2) You have a frequent open-mouth resting posture with your lips parted and/or your tongue resting against your front teeth\n3) You have frequent mouth breathing\n4) You are a messy and/or loud eater\n5) Your tongue is visible near the front of your mouth or between your teeth while swallowing and/or speaking\n6) You are unable or have difficulty swallowing while smiling\n7) You have experienced reversal of your orthodontic treatment\n8) You have protruding front teeth"))
         learnMoreInfo.append(LearnMoreInfo(title: "Causes", details: "Common causes of tongue thrusts include:\n1) Prolonged use of artificial nipples used in feeding infants (pacifiers/bottles)\n2) Prolonged use of sippy cups\n3) High, arched, and/or narrow palate\n4) Allergies or nasal congestion\n5) Macroglossia (enlarged tongue)\n6) Thumb sucking\n7) Large tonsils\n8) Hereditary factors\n9) Ankyloglossia (tongue tied)"))
+        learnMoreInfo.append(LearnMoreInfo(title: "Needed Therapy Supplies", details: "Some of the activities and exercises used in the Bust the Thrust program require the use of various supplies. Here is a quick list of these needed supplies: \n-1 Hand-held mirror\n-63 Tongue Depressors\n-1 Spray Bottle\n-21 Straws\n-Soft Foods (applesauce, pudding, yogurt, etc.)\n-1 spoon\n-1 regular sized drinking glass\n-Liquids for drinking\n-Variety of food\n-125 mints"))
 
     }
     

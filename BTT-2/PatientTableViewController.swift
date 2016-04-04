@@ -124,35 +124,35 @@ class PatientLessonTableViewController: UITableViewController{
         {
             let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
-            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[0]
         }
         if(segue.identifier == "segue_exercise2_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
-            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[1]
         }
         if(segue.identifier == "segue_exercise3_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
-            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[2]
         }
         if(segue.identifier == "segue_exercise4_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
-            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[3]
         }
         if(segue.identifier == "segue_exercise5_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
-            let viewController : LessonViewController = segue.destinationViewController as! LessonViewController
+            let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[4]
         }
     }

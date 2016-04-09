@@ -16,10 +16,10 @@ class HomepageViewController: UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        btn_logIn.layer.cornerRadius = 10
-        btn_assessment.layer.cornerRadius = 10
-        btn_learnMore.layer.cornerRadius = 10
-        btn_signUp.layer.cornerRadius = 10
+        btn_logIn.layer.cornerRadius = 7
+        btn_assessment.layer.cornerRadius = 7
+        btn_learnMore.layer.cornerRadius = 7
+        btn_signUp.layer.cornerRadius = 7
         
     }
     override func didReceiveMemoryWarning() {

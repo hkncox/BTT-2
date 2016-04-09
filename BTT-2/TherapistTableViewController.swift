@@ -16,8 +16,8 @@ class TherapistLessonTableViewController: UITableViewController{
     @IBOutlet weak var btn_logOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        btn_logOut.layer.cornerRadius = 10
-       btn_addUser.layer.cornerRadius = 10
+        btn_logOut.layer.cornerRadius = 5
+       btn_addUser.layer.cornerRadius = 5
         if (user.accountType != "Therapist"){
             btn_addUser.hidden = true
         }
@@ -46,11 +46,11 @@ class TherapistLessonTableViewController: UITableViewController{
         cell.btn_exercise2.tag = indexPath.row
         cell.btn_exercise3.tag = indexPath.row
         if (week.weekNumber == "Getting Started"){
-             cell.btn_exercise2.setTitle("The Spot", forState: UIControlState.Normal)
+        //     cell.btn_exercise2.setTitle("The Spot", forState: UIControlState.Normal)
             cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
             cell.btn_exercise3.hidden = true
-            cell.btn_exercise1.setTitle("Resting Position", forState: UIControlState.Normal)
+           // cell.btn_exercise1.setTitle("Resting Position", forState: UIControlState.Normal)
            // cell.label_complete.text = ""
         }
         if (week.exercises.count > 3){

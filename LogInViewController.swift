@@ -16,7 +16,7 @@ class LogInViewController: UIViewController,  UITextFieldDelegate, DatabaseProto
     var loggedIn = false
     //var name: String = ""
     var users: [User] = [User]()
-    @IBOutlet var lbl_error: UILabel!
+    @IBOutlet var lbl_error: UITextView!
     @IBOutlet var logInButton: UIButton!
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var text_email: UITextField!
@@ -27,8 +27,9 @@ class LogInViewController: UIViewController,  UITextFieldDelegate, DatabaseProto
         super.viewDidLoad()
         text_email.autocorrectionType = .No
         text_password.autocorrectionType = .No
-        logInButton.layer.cornerRadius = 10
-        cancelButton.layer.cornerRadius = 10
+        text_accessCode.autocorrectionType = .No
+        logInButton.layer.cornerRadius = 5
+        cancelButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         let db = DatabaseModel()
         db.delegate = self
@@ -105,6 +106,11 @@ class LogInViewController: UIViewController,  UITextFieldDelegate, DatabaseProto
         else {
             lbl_error.text = "Username and password not recognized. Please try again"
         }
+    }
+    @IBAction func dismissKeyboard(sender: AnyObject){
+        text_email.resignFirstResponder()
+        text_password.resignFirstResponder()
+        text_accessCode.resignFirstResponder()
     }
     
     // MARK: - Navigation

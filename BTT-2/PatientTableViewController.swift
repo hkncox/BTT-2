@@ -16,7 +16,7 @@ class PatientLessonTableViewController: UITableViewController{
     var user: User = User()
     override func viewDidLoad() {
         super.viewDidLoad()
-        btn_logOut.layer.cornerRadius = 10
+        btn_logOut.layer.cornerRadius = 5
         let name: String = "\(user.firstName!)"
         lbl_title.text = "\(name)'s Tongue Thrust Therapy Program"
         // Uncomment the following line to preserve selection between presentations
@@ -51,11 +51,12 @@ class PatientLessonTableViewController: UITableViewController{
         cell.btn_exercise5.tag = indexPath.row
         cell.label_weekNum.text = week.weekNumber
         if (week.weekNumber == "Getting Started"){
-            cell.btn_exercise2.setTitle("The Spot", forState: UIControlState.Normal)
+          //  cell.btn_exercise2.setTitle("The Spot", forState: UIControlState.Normal)
             cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
             cell.btn_exercise3.hidden = true
-            cell.btn_exercise1.setTitle("Resting Position", forState: UIControlState.Normal)
+          //  cell.btn_exercise1.setTitle("Resting Position", forState: UIControlState.Normal)
+      //      cell.btn_exercise1.setImage(image: nil, forState: <#T##UIControlState#>)
            // cell.label_complete.text = ""
         }
         if (week.exercises.count > 3){
@@ -68,13 +69,7 @@ class PatientLessonTableViewController: UITableViewController{
             cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
         }
-        if (week.complete == true){
-        cell.label_complete.text = "Complete"
-        }
-        else{
-        cell.label_complete.text = "Not Complete"
-        }
-        // Configure the cell...
+               // Configure the cell...
 
         return cell
     }

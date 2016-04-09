@@ -30,10 +30,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
   //  var db: DatabaseModel = DatabaseModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        button_cancel.layer.cornerRadius = 10
-        button_clear.layer.cornerRadius = 10
-        button_logIn.layer.cornerRadius = 10
-        button_signUp.layer.cornerRadius = 10
+        button_cancel.layer.cornerRadius = 5
+        button_clear.layer.cornerRadius = 5
+        button_logIn.layer.cornerRadius = 5
+        button_signUp.layer.cornerRadius = 5
         self.picker_accountType.delegate = self
         self.picker_accountType.dataSource = self
         text_firstName.autocorrectionType = .No

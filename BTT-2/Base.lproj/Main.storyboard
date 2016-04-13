@@ -115,7 +115,7 @@
                                         <rect key="frame" x="0.0" y="473" width="560" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-Uz-N5q">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="36"/>
                                                 <color key="backgroundColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="oyU-VI-0LR"/>
@@ -125,7 +125,7 @@
                                                 <state key="normal" title="Cancel"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hm-SV-ZTR">
-                                                <rect key="frame" x="470" y="0.0" width="90" height="36"/>
+                                                <rect key="frame" x="290" y="0.0" width="270" height="36"/>
                                                 <color key="backgroundColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="L7B-At-kq0"/>

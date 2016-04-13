@@ -1247,7 +1247,7 @@
         <scene sceneID="iSj-t7-4Fh">
             <objects>
                 <tableViewController id="lQ4-9W-Vhe" customClass="PatientLessonTableViewController" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JvF-91-esr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="JvF-91-esr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1281,79 +1281,89 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" id="lf1-DW-YqD" customClass="LessonTableViewCell" customModule="BTT_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="61" id="lf1-DW-YqD" customClass="LessonTableViewCell" customModule="BTT_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="128" width="600" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="lf1-DW-YqD" id="2QU-yc-ln5">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vey-16-NgG">
-                                            <rect key="frame" x="-1" y="0.0" width="483" height="32"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vey-16-NgG">
+                                            <rect key="frame" x="-1" y="0.0" width="391" height="50"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYl-Jo-Cwp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="61" height="32"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="61" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIS-Lq-4HZ">
-                                                    <rect key="frame" x="71" y="0.0" width="72" height="32"/>
-                                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIS-Lq-4HZ">
+                                                    <rect key="frame" x="77" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="CVU-P5-Izc"/>
+                                                        <constraint firstAttribute="height" constant="50" id="gon-rr-RRH"/>
+                                                    </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                                    <state key="normal" title="Exercise 1">
+                                                    <state key="normal" image="button">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="Bpo-JX-XFs" kind="show" identifier="segue_exercise1_patient" id="rAG-qa-LOl"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9M-Jv-CAM">
-                                                    <rect key="frame" x="153" y="0.0" width="75" height="32"/>
-                                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9M-Jv-CAM">
+                                                    <rect key="frame" x="143" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="5xX-j2-z5Q"/>
+                                                        <constraint firstAttribute="height" constant="50" id="cHG-fo-Ddu"/>
+                                                    </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Exercise 2">
+                                                    <state key="normal" image="button-2">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="Bpo-JX-XFs" kind="show" id="zEs-o2-rtS"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYH-4y-5wm">
-                                                    <rect key="frame" x="238" y="0.0" width="75" height="32"/>
-                                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYH-4y-5wm">
+                                                    <rect key="frame" x="209" y="0.0" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="2Oj-m3-9TN"/>
+                                                        <constraint firstAttribute="height" constant="50" id="LOD-iy-3eu"/>
+                                                    </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Exercise 3">
+                                                    <state key="normal" image="button-3">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="Bpo-JX-XFs" kind="show" id="Zgg-Dd-Whq"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLB-Bs-JQR">
-                                                    <rect key="frame" x="323" y="0.0" width="75" height="32"/>
-                                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLB-Bs-JQR">
+                                                    <rect key="frame" x="275" y="0.0" width="50" height="50"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="btn_exercise4"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="0i6-am-PRm"/>
+                                                        <constraint firstAttribute="height" constant="50" id="pq6-js-u96"/>
+                                                    </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Exercise 4">
+                                                    <state key="normal" image="button-4">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="Bpo-JX-XFs" kind="show" id="JC2-T7-yL5"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-oE-RBw">
-                                                    <rect key="frame" x="408" y="0.0" width="75" height="32"/>
-                                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uo-oE-RBw">
+                                                    <rect key="frame" x="341" y="0.0" width="50" height="50"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="btn_exercise5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="1is-EB-gka"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Pha-SA-XlE"/>
+                                                    </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Exercise 5">
+                                                    <state key="normal" image="button-5">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
@@ -1391,7 +1401,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxv-63-K1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2158" y="1229"/>
+            <point key="canvasLocation" x="-2466" y="1104"/>
         </scene>
         <!--Patient Lesson View Controller-->
         <scene sceneID="9xh-hJ-GVh">
@@ -1818,11 +1828,11 @@
         <image name="unchecked_checkbox.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hIB-Lm-nNG"/>
-        <segue reference="qeP-tR-UEJ"/>
+        <segue reference="vqb-B8-7hy"/>
         <segue reference="Jy3-jT-sNu"/>
         <segue reference="6kD-UB-myk"/>
         <segue reference="zQr-PY-NtM"/>
+        <segue reference="hIB-Lm-nNG"/>
         <segue reference="47t-cT-LD1"/>
         <segue reference="rci-ZB-H0q"/>
         <segue reference="Rsk-Gj-wmi"/>

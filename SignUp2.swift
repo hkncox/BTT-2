@@ -8,7 +8,7 @@
 
 
 import UIKit
-
+import StoreKit
 class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, DatabaseProtocol
 {
     
@@ -25,7 +25,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var button_clear: UIButton!
     @IBOutlet var button_cancel: UIButton!
     @IBOutlet var button_logIn: UIButton!
-    var validated: Bool = false;
+     var validated: Bool = false;
     var pickerData: [String] = [String]()
   //  var db: DatabaseModel = DatabaseModel()
     override func viewDidLoad() {
@@ -46,6 +46,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         db.delegate = self
         db.downloadItems()
     }
+
     func itemsDownloaded(items: [User]) {
         
         users = items
@@ -119,12 +120,12 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_createPassword.enabled = false;
         text_confirmPassword.enabled = false;
         button_signUp.setTitle("Purchase", forState: UIControlState.Normal)
-        let selectedValue = pickerData[picker_accountType.selectedRowInComponent(0)]
+              let selectedValue = pickerData[picker_accountType.selectedRowInComponent(0)]
         if (selectedValue == "Therapist") //THERAPIST
         {
             label_error.textColor = UIColor.blackColor()
             label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
-           
+            
             //CHECK PAYMENT HERE. IF SUCCESSFUL
          //     let dataDictionary:[String:String] = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Therapist"]
           //   db.addToDB(dataDictionary)

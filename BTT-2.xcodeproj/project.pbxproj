@@ -31,6 +31,9 @@
 		54BB87D81C4C3C1800DADA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB87D71C4C3C1800DADA1E /* Assets.xcassets */; };
 		54BB87E61C4C3C1800DADA1E /* BTT_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87E51C4C3C1800DADA1E /* BTT_2Tests.swift */; };
 		54BB87F11C4C3C1800DADA1E /* BTT_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB87F01C4C3C1800DADA1E /* BTT_2UITests.swift */; };
+		54EB8A091CC1E2BE0005F3C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */; };
+		54EB8A0B1CC2ABFD0005F3C1 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */; };
+		54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0C1CC2ACB30005F3C1 /* Products.swift */; };
 		5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */; };
 		5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */; };
 		5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */; };
@@ -83,6 +86,10 @@
 		54BB87EC1C4C3C1800DADA1E /* BTT-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTT-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BB87F01C4C3C1800DADA1E /* BTT_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTT_2UITests.swift; sourceTree = "<group>"; };
 		54BB87F21C4C3C1800DADA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54EB8A061CC1DFA80005F3C1 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		54EB8A0C1CC2ACB30005F3C1 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
 		5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
 		5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coming-Soon.png"; sourceTree = "<group>"; };
@@ -95,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB8A091CC1E2BE0005F3C1 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +164,8 @@
 			children = (
 				549DCF041C83744900F269A1 /* LogInViewController.swift */,
 				549DCE2C1C7A73B800F269A1 /* SignUp2.swift */,
+				54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */,
+				54EB8A0C1CC2ACB30005F3C1 /* Products.swift */,
 				549DCF531C934D8300F269A1 /* DatabaseModel.swift */,
 				549DCF551C9350FC00F269A1 /* User2.swift */,
 				5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */,
@@ -197,6 +207,8 @@
 		E8E1661C062F206CE5F26F6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */,
+				54EB8A061CC1DFA80005F3C1 /* PassKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -343,6 +355,7 @@
 				54BB87D11C4C3C1800DADA1E /* AppDelegate.swift in Sources */,
 				544AD3AF1C70FF9D004FAD76 /* LessonCreator.swift in Sources */,
 				54B0C2721C95F646004E8B85 /* Homepage.swift in Sources */,
+				54EB8A0B1CC2ABFD0005F3C1 /* IAPHelper.swift in Sources */,
 				549DCF051C83744900F269A1 /* LogInViewController.swift in Sources */,
 				549DCF561C9350FC00F269A1 /* User2.swift in Sources */,
 				549DCE2D1C7A73B800F269A1 /* SignUp2.swift in Sources */,
@@ -355,6 +368,7 @@
 				54B0C2761C9DC5DF004E8B85 /* DatabaseModel.swift in Sources */,
 				54B0C28D1C9F4841004E8B85 /* TherapistTableViewController.swift in Sources */,
 				544AD3AD1C70F9AF004FAD76 /* Week.swift in Sources */,
+				54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */,
 				54306E121CB18C40008D9F8E /* LearnMoreInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,10 +507,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BTT-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bust-The-Thrust.BTT-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -506,10 +522,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BTT-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bust-The-Thrust.BTT-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

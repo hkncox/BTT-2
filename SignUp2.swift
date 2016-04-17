@@ -11,7 +11,7 @@ import UIKit
 import StoreKit
 class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, DatabaseProtocol
 {
-    
+    var products: [SKProduct] = [SKProduct]()
     var users: [User] = [User]()
     var selectedUser: User = User()
     @IBOutlet var text_email: UITextField!
@@ -30,6 +30,9 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
   //  var db: DatabaseModel = DatabaseModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+ //       NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MasterViewController.handlePurchaseNotification(_:)),
+   //         name: IAPHelper.IAPHelperPurchaseNotification,
+     //       object: nil)
         button_cancel.layer.cornerRadius = 5
         button_clear.layer.cornerRadius = 5
         button_logIn.layer.cornerRadius = 5
@@ -45,6 +48,15 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         let db = DatabaseModel()
         db.delegate = self
         db.downloadItems()
+        products = []
+        
+        
+      Products.store.requestProducts{success, products in
+            if success {
+                self.products = products!
+            }
+        }
+
     }
 
     func itemsDownloaded(items: [User]) {
@@ -125,8 +137,8 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         {
             label_error.textColor = UIColor.blackColor()
             label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
-            
-            //CHECK PAYMENT HERE. IF SUCCESSFUL
+              let product = products[0]
+             Products.store.buyProduct(product)            //CHECK PAYMENT HERE. IF SUCCESSFUL
          //     let dataDictionary:[String:String] = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Therapist"]
           //   db.addToDB(dataDictionary)
           //  db.
@@ -255,5 +267,15 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_email.resignFirstResponder()
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if identifier == "loginSuccess" {
+            
+            let product = products[0]
+            
+            return Products.store.isProductPurchased(product.productIdentifier)
+        }
+        
+        return true
+    }
     
 }

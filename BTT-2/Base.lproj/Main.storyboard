@@ -44,7 +44,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gfs-Te-F4O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ker-Ir-Hrg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="QrA-Wo-6P8">
@@ -123,6 +123,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="5G5-j6-1mR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hm-SV-ZTR">
                                                 <rect key="frame" x="470" y="0.0" width="90" height="36"/>
@@ -174,7 +177,7 @@
             <objects>
                 <tableViewController id="XGF-C2-VdP" customClass="TherapistLessonTableViewController" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" id="85R-ER-hta">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -185,7 +188,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="400" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-Te-3RZ">
                                     <rect key="frame" x="14" y="24" width="580" height="32"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-D2-d1h">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-D2-d1h">
                                             <rect key="frame" x="0.0" y="0.0" width="95" height="32"/>
                                             <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -199,7 +202,7 @@
                                                 <segue destination="abL-98-XJ4" kind="show" identifier="segue_addUser" id="maj-lz-WTC"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
                                             <rect key="frame" x="495" y="0.0" width="85" height="32"/>
                                             <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -242,13 +245,13 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-Zk-hbY">
                                             <rect key="frame" x="-1" y="0.0" width="366" height="45"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-kT-dx8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-kT-dx8">
                                                     <rect key="frame" x="0.0" y="0.0" width="61" height="45"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRv-Hu-0jR">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRv-Hu-0jR">
                                                     <rect key="frame" x="77" y="0.0" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="2TB-Cc-gSH"/>
@@ -264,7 +267,7 @@
                                                         <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise1" id="v2K-ib-qYt"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-FN-bGa">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-FN-bGa">
                                                     <rect key="frame" x="138" y="0.0" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="C8c-xB-8tr"/>
@@ -278,7 +281,7 @@
                                                         <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise2" id="47t-cT-LD1"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-mP-aYu">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-mP-aYu">
                                                     <rect key="frame" x="199" y="0.0" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="epT-hK-ors"/>
@@ -292,7 +295,7 @@
                                                         <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise3" id="GnT-MJ-NQY"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyr-u2-imi">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyr-u2-imi">
                                                     <rect key="frame" x="260" y="0.0" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="Qb0-Td-8al"/>
@@ -306,7 +309,7 @@
                                                         <segue destination="dvy-Cj-aR1" kind="show" identifier="segue_exercise4" id="Jta-7z-MDZ"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-TS-oMO">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-TS-oMO">
                                                     <rect key="frame" x="321" y="0.0" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="45" id="Eyf-uS-3Fy"/>
@@ -362,7 +365,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oih-AQ-ngC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mDu-88-gSf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-xN-G9H">
@@ -490,7 +493,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aTR-r5-Bfb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FzR-tL-mKx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMl-SN-fKY">
@@ -884,7 +887,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tHk-ti-3dI" kind="show" id="npM-U3-l4t"/>
+                                    <segue destination="tHk-ti-3dI" kind="show" identifier="paymentSuccess" id="npM-U3-l4t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -912,6 +915,7 @@
                         <outlet property="text_email" destination="9FJ-OG-XNb" id="wLk-Pz-JHQ"/>
                         <outlet property="text_firstName" destination="TCH-MG-OBK" id="J7e-yg-RZ0"/>
                         <outlet property="text_lastName" destination="2pF-n0-6Fi" id="34W-Jg-dNw"/>
+                        <segue destination="tHk-ti-3dI" kind="show" id="OrF-xe-RLJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLr-NC-DLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -921,7 +925,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1422" y="-5"/>
+            <point key="canvasLocation" x="1082" y="-318"/>
         </scene>
         <!--Learnmore-->
         <scene sceneID="p81-m9-oeT">
@@ -1003,7 +1007,7 @@
                                                     <rect key="frame" x="0.0" y="34" width="575" height="409"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -1248,7 +1252,7 @@
             <objects>
                 <tableViewController id="lQ4-9W-Vhe" customClass="PatientLessonTableViewController" customModule="BTT_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="JvF-91-esr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1830,11 +1834,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="47t-cT-LD1"/>
         <segue reference="hIB-Lm-nNG"/>
-        <segue reference="qeP-tR-UEJ"/>
+        <segue reference="v0N-7Y-Pzc"/>
+        <segue reference="rci-ZB-H0q"/>
+        <segue reference="Rsk-Gj-wmi"/>
         <segue reference="Jy3-jT-sNu"/>
         <segue reference="6kD-UB-myk"/>
         <segue reference="zQr-PY-NtM"/>
-        <segue reference="rci-ZB-H0q"/>
-        <segue reference="Rsk-Gj-wmi"/>
     </inferredMetricsTieBreakers>
 </document>

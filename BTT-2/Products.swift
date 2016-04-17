@@ -8,12 +8,12 @@
 
 import Foundation
 
-public struct IAPProducts {
+public struct Products {
     
     private static let Prefix = "Bust-The-Thrust.BTT-2."
     public static let TherapistAccess = Prefix + "btt_therapistAccess"
-    private static let productIdentifiers: Set<ProductIdentifier> = [IAPProducts.TherapistAccess]
-    public static let store = IAPHelper(productIds: IAPProducts.productIdentifiers)
+    private static let productIdentifiers: Set<ProductIdentifier> = [Products.TherapistAccess]
+    public static let store = IAPHelper(productIds: Products.productIdentifiers)
 }
 
 func resourceNameForProductIdentifier(productIdentifier: String) -> String? {

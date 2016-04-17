@@ -25,6 +25,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
     @IBOutlet var button_clear: UIButton!
     @IBOutlet var button_cancel: UIButton!
     @IBOutlet var button_logIn: UIButton!
+     let db = DatabaseModel()
      var validated: Bool = false;
     var pickerData: [String] = [String]()
   //  var db: DatabaseModel = DatabaseModel()
@@ -45,17 +46,17 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_email.autocorrectionType = .No
         text_confirmPassword.autocorrectionType = .No
         pickerData = ["Therapist", "Single User"]
-        let db = DatabaseModel()
+       
         db.delegate = self
         db.downloadItems()
-        products = []
+     //   products = []
         
         
-      Products.store.requestProducts{success, products in
-            if success {
-                self.products = products!
-            }
-        }
+    //  Products.store.requestProducts{success, products in
+      //      if success {
+        //        self.products = products!
+          //  }
+        //}
 
     }
 
@@ -137,10 +138,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         {
             label_error.textColor = UIColor.blackColor()
             label_error.text = "The price for therapist access is $149.99. Press Purchase to Continue"
-              let product = products[0]
-             Products.store.buyProduct(product)            //CHECK PAYMENT HERE. IF SUCCESSFUL
-         //     let dataDictionary:[String:String] = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Therapist"]
-          //   db.addToDB(dataDictionary)
+        //      let product = products[0]
+      //       Products.store.buyProduct(product)            //CHECK PAYMENT HERE. IF SUCCESSFUL
+             let dataDictionary = [ "firstName" : text_firstName.text!, "lastName" : text_lastName.text!, "email" : text_email.text!, "password" : text_createPassword.text!, "accountType" : "Therapist"]
+             db.addToDB(dataDictionary)
           //  db.
         
         }
@@ -157,7 +158,10 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         }
         
     }
-   /* func addToDB(){
+ /*   func addToDB(){
+        let url:NSURL = NSURL(string: "http://www.utahscommunicationconnection.com/postService.php")!
+        
+        let request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
         var dataDictionary:[String:String?] = [ "firstName" : text_firstName.text, "lastName" : text_lastName.text, "email" : text_email.text, "password" : text_createPassword.text, "accountType" : pickerData[picker_accountType.selectedRowInComponent(0)]]
         
         var data:NSData = NSJSONSerialization.dataWithJSONObject(dataDictionary, options: nil, error: nil)!
@@ -267,7 +271,7 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         text_email.resignFirstResponder()
     }
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+ /*   override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if identifier == "loginSuccess" {
             
             let product = products[0]
@@ -277,5 +281,5 @@ class SignUp: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPic
         
         return true
     }
-    
+  */  
 }

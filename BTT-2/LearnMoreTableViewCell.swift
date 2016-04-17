@@ -15,6 +15,7 @@ class LearnMoreTableViewCell: UITableViewCell {
     @IBOutlet weak var label_title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        label_title.layer.cornerRadius = 5
         // Initialization code
     }
 

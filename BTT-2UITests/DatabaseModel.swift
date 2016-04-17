@@ -50,7 +50,33 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
     }
     
 }
-/*    func addToDB(dict: [String:String]){
+
+    func addToDB(dict: NSDictionary) {
+      //  var err: NSError?
+        let request = NSMutableURLRequest(URL: NSURL(string:"http://www.utahscommunicationconnection.com/postService.php")!)
+      //  let dataDict : NSData = dict as! NSData
+        // Set the method to POST
+        request.HTTPMethod = "POST"
+        do {
+            if let data = try NSJSONSerialization.dataWithJSONObject(dict, options: []) as? NSData{
+                request.HTTPBody = data
+                let session = NSURLSession.sharedSession()
+                
+                let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+                    //  let json:JSON = JSON(data: data)
+                    // onCompletion(json, err)
+                })
+                task.resume()
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+
+        // Set the POST body for the request
+        
+    }
+    /*
+    func addToDB(dict: NSData){
     
             
             // Create a request
@@ -62,14 +88,16 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
             request.HTTPMethod = "POST"
             
       //      var dataDictionary:[String:String] = [ "Email" : email, "Password" : password, "FirstName" : firstname, "LastName" : lastname, "DateOfBirth" : dob, "Gender" : gender, "QuestionId" : questionId, "Answer" : answer]
-        var err: NSError?
-        var data: NSData = NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions.PrettyPrinted, error:
-            &err)
-        if (err){
-            NSLog("Failure to serialize")
-        }
+      
+        do {
+            if let data = try NSJSONSerialization.JSONObjectWithData(dict, options: []) as? NSDictionary {
+             //   NSLOg("Registration Succesful")
+               // dispatch_async(dispatch_get_main_queue()){}
+            }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
             request.HTTPBody = data
-        
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             
             // Create a NSURLSession task with completion handler
@@ -79,7 +107,7 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
             session = NSURLSession(configuration: configuration, delegate: self, delegateQueue: nil)
         let task = session.dataTaskWithRequest(request, completionHandler: { (data:NSData?, response:NSURLResponse?, error:NSError?) -> Void in
             
-                let response:[String:String] = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! [String:String]
+          /* let response = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as [String:String]{
                 
                 // Check if there was an error
                 if let result = response["isRegistered"] {
@@ -91,7 +119,7 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
                         dispatch_async(dispatch_get_main_queue()) {
                             
                             //self.performSegueWithIdentifier("loginSegue", sender: self)
-                            self.performSegueWithIdentifier("cancelSegue", sender: self)
+                          //  self.performSegueWithIdentifier("cancelSegue", sender: self)
                             
                             
                         }
@@ -106,10 +134,10 @@ func URLSession(session: NSURLSession, task: NSURLSessionTask, didCompleteWithEr
                         }
                     }
                 }
-            })
+            })*/
             
             task.resume()
-        }
+            }
 */       /* var data:NSData = NSJSONSerialization.dataWithJSONObject(data: dict, options: nil, error: nil)!
         request.HTTPBody = data
         

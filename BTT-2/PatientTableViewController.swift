@@ -65,10 +65,15 @@ class PatientLessonTableViewController: UITableViewController{
         if (week.exercises.count > 4){
             cell.btn_exercise5.tag = indexPath.row
         }
-        else if (week.exercises.count <= 3){
-            cell.btn_exercise4.hidden = true
+        if (week.exercises.count == 4){
+           // cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
         }
+        if (week.exercises.count == 3){
+            cell.btn_exercise5.hidden = true
+            cell.btn_exercise4.hidden = true
+        }
+        
                // Configure the cell...
 
         return cell
@@ -115,41 +120,55 @@ class PatientLessonTableViewController: UITableViewController{
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+       
         if(segue.identifier == "segue_exercise1_patient")
         {
-            let btnExercise : UIButton = sender as! UIButton
-            let selectedIndex : Int = btnExercise.tag
             let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
+            let btnExercise : UIButton = sender as! UIButton
+          let selectedIndex : Int = btnExercise.tag
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[0]
+              viewController.week = sharedInstance.weeks[selectedIndex]
+             viewController.patient = user as! Patient
         }
         if(segue.identifier == "segue_exercise2_patient")
         {
-            let btnExercise : UIButton = sender as! UIButton
-            let selectedIndex : Int = btnExercise.tag
+           let btnExercise : UIButton = sender as! UIButton
             let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
+             let selectedIndex : Int = btnExercise.tag
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[1]
+              viewController.week = sharedInstance.weeks[selectedIndex]
+             viewController.patient = user as! Patient
         }
         if(segue.identifier == "segue_exercise3_patient")
         {
-            let btnExercise : UIButton = sender as! UIButton
+          let btnExercise : UIButton = sender as! UIButton
             let selectedIndex : Int = btnExercise.tag
             let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[2]
+              viewController.week = sharedInstance.weeks[selectedIndex]
+             viewController.patient = user as! Patient
         }
         if(segue.identifier == "segue_exercise4_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
-            let selectedIndex : Int = btnExercise.tag
+           let selectedIndex : Int = btnExercise.tag
             let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[3]
+          viewController.week = sharedInstance.weeks[selectedIndex]
+             viewController.patient = user as! Patient
         }
         if(segue.identifier == "segue_exercise5_patient")
         {
             let btnExercise : UIButton = sender as! UIButton
-            let selectedIndex : Int = btnExercise.tag
+           let selectedIndex : Int = btnExercise.tag
             let viewController : PatientLessonViewController = segue.destinationViewController as! PatientLessonViewController
             viewController.exercise = sharedInstance.weeks[selectedIndex].exercises[4]
+              viewController.week = sharedInstance.weeks[selectedIndex]
+             viewController.patient = user as! Patient
         }
+       
+      
     }
  
 

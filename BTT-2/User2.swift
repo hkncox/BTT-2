@@ -69,16 +69,41 @@ class SingleUser: User {
 class Patient: User{
     var accessCode: String?
     var therapistID: String?
-    var week1Complete: [Bool]?
-    var week2Complete: [Bool]?
-    var week3Complete: [Bool]?
-    var week4Complete: [Bool]?
-    var week5Complete: [Bool]?
-    var week6Complete: [Bool]?
-    var week7Complete: [Bool]?
-    var week8Complete: [Bool]?
-    var week9Complete: [Bool]?
-    let THREE = 3
+    var week1E1Complete: [[Bool]]?
+    var week1E2Complete: [[Bool]]?
+    var week1E3Complete: [[Bool]]?
+    var week2E1Complete: [[Bool]]?
+    var week2E2Complete: [[Bool]]?
+    var week2E3Complete: [[Bool]]?
+    var week2E4Complete: [[Bool]]?
+    var week3E1Complete: [[Bool]]?
+    var week3E2Complete: [[Bool]]?
+    var week3E3Complete: [[Bool]]?
+    var week3E4Complete: [[Bool]]?
+    var week4E1Complete: [[Bool]]?
+    var week4E2Complete: [[Bool]]?
+    var week4E3Complete: [[Bool]]?
+    var week5E1Complete: [[Bool]]?
+    var week5E2Complete: [[Bool]]?
+    var week5E3Complete: [[Bool]]?
+    var week6E1Complete: [[Bool]]?
+    var week6E2Complete: [[Bool]]?
+    var week6E3Complete: [[Bool]]?
+    var week6E4Complete: [[Bool]]?
+    var week7E1Complete: [[Bool]]?
+    var week7E2Complete: [[Bool]]?
+    var week7E3Complete: [[Bool]]?
+    var week7E4Complete: [[Bool]]?
+    var week7E5Complete: [[Bool]]?
+    var week8E1Complete: [[Bool]]?
+    var week8E2Complete: [[Bool]]?
+    var week8E3Complete: [[Bool]]?
+    var week8E4Complete: [[Bool]]?
+    var week8E5Complete: [[Bool]]?
+    var week9E1Complete: [[Bool]]?
+    var week9E2Complete: [[Bool]]?
+    var week9E3Complete: [[Bool]]?
+   // let THREE = 3?
   //  let FOUR = 4
     override init(){
         super.init()
@@ -87,25 +112,41 @@ class Patient: User{
         super.init(firstName: firstName, lastName: lastName, accountType: accountType)
         self.accessCode = accessCode
         self.therapistID = therapistID
-     /*  for (var i = 0; i < THREE; i++){
-        //need to download progress from server and load here
-            week1Complete![i] = false
-            week2Complete![i] = false
-            week3Complete![i] = false
-            week4Complete![i] = false
-            week5Complete![i] = false
-            week6Complete![i] = false
-            week7Complete![i] = false
-            week8Complete![i] = false
-            week9Complete![i] = false
-        }
-        week2Complete![THREE] = false
-        week3Complete![THREE] = false
-        week6Complete![THREE] = false
-        week7Complete![THREE] = false
-        week7Complete![THREE + 1] = false
-        week8Complete![THREE] = false
-        week8Complete![THREE + 1] = false*/
-    }
+        self.week1E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week1E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week1E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week2E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week2E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week2E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week2E4Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week3E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week3E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week3E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week3E4Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week4E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week4E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week4E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week5E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week5E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week5E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week6E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week6E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week6E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week6E4Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week7E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week7E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week7E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week7E4Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week7E5Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week8E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week8E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week8E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week8E4Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week8E5Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week9E1Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week9E2Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+        self.week9E3Complete = [[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]]
+
+           }
     
 }

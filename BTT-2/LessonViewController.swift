@@ -18,13 +18,18 @@ class LessonViewController: UIViewController {
     @IBOutlet weak var lbl_frequency: UILabel!
     @IBOutlet weak var lbl_instructions: UITextView!
     @IBOutlet weak var lbl_tips: UITextView!
-    
+    @IBOutlet var scrollView: UIScrollView!
     
     @IBOutlet weak var btn_playVideo: UIButton!
      var exercise: Exercise!
-    override func viewDidLoad() {
+       override func viewDidLoad() {
         super.viewDidLoad()
-        lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
+        if (exercise.title == "Resting Position" || exercise.title == "The Spot"){
+            lbl_exerciseNum.text = "\(exercise.title)"
+        }
+        else{
+            lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
+        }
         lbl_duration.text = "Duration: \(exercise.duration)"
         lbl_frequency.text = "Frequency: \(exercise.frequency)"
         lbl_instructions.text = exercise.instructions

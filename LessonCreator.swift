@@ -2,7 +2,7 @@
 //  LessonCreator.swift
 //  BTT-2
 //
-//  Created by Nicole Talley on 2/14/16.
+//  Created by Nicole Talley and Faleh A on 2/14/16.
 //  Copyright © 2016 Nicole Talley. All rights reserved.
 //
 

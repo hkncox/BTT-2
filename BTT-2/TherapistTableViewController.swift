@@ -59,13 +59,16 @@ class TherapistLessonTableViewController: UITableViewController{
         if (week.exercises.count > 4){
         cell.btn_exercise5.tag = indexPath.row
         }
-        else if (week.exercises.count <= 3){
-            cell.btn_exercise4.hidden = true
+    
+        if (week.exercises.count == 4){
+    // cell.btn_exercise4.hidden = true
             cell.btn_exercise5.hidden = true
         }
-        
-               // Configure the cell...
-        
+        if (week.exercises.count == 3){
+            cell.btn_exercise5.hidden = true
+            cell.btn_exercise4.hidden = true
+        }
+   
         return cell
     }
     

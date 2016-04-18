@@ -34,11 +34,11 @@
 		54EB8A091CC1E2BE0005F3C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */; };
 		54EB8A0B1CC2ABFD0005F3C1 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */; };
 		54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0C1CC2ACB30005F3C1 /* Products.swift */; };
-		5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */; };
-		5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */; };
 		5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */; };
 		5A999ADC1C6022F100B772BD /* video in Resources */ = {isa = PBXBuildFile; fileRef = 5A999ADB1C6022F100B772BD /* video */; };
 		5A999ADE1C60230700B772BD /* img in Resources */ = {isa = PBXBuildFile; fileRef = 5A999ADD1C60230700B772BD /* img */; };
+		5AC33B011CC54D710011BF5F /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC33B001CC54D710011BF5F /* Assessment.swift */; };
+		5AC33B031CC54E780011BF5F /* AssessmentTableViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC33B021CC54E780011BF5F /* AssessmentTableViewContoller.swift */; };
 		5AEC5AB71CBF177B00769042 /* button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC5AB21CBF177B00769042 /* button-2.png */; };
 		5AEC5AB81CBF177B00769042 /* button-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC5AB31CBF177B00769042 /* button-3.png */; };
 		5AEC5AB91CBF177B00769042 /* button-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC5AB41CBF177B00769042 /* button-4.png */; };
@@ -95,11 +95,11 @@
 		54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		54EB8A0C1CC2ACB30005F3C1 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
-		5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
-		5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
 		5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coming-Soon.png"; sourceTree = "<group>"; };
 		5A999ADB1C6022F100B772BD /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 		5A999ADD1C60230700B772BD /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		5AC33B001CC54D710011BF5F /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		5AC33B021CC54E780011BF5F /* AssessmentTableViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentTableViewContoller.swift; sourceTree = "<group>"; };
 		5AEC5AB21CBF177B00769042 /* button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-2.png"; path = "img/button-2.png"; sourceTree = "<group>"; };
 		5AEC5AB31CBF177B00769042 /* button-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-3.png"; path = "img/button-3.png"; sourceTree = "<group>"; };
 		5AEC5AB41CBF177B00769042 /* button-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-4.png"; path = "img/button-4.png"; sourceTree = "<group>"; };
@@ -178,13 +178,13 @@
 				54EB8A0C1CC2ACB30005F3C1 /* Products.swift */,
 				549DCF531C934D8300F269A1 /* DatabaseModel.swift */,
 				549DCF551C9350FC00F269A1 /* User2.swift */,
-				5A1CF0EB1C5021FA00B9A827 /* checked_checkbox.png */,
 				5A999ADB1C6022F100B772BD /* video */,
-				5A1CF0EC1C5021FA00B9A827 /* unchecked_checkbox.png */,
 				5A999ADD1C60230700B772BD /* img */,
 				5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */,
 				54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */,
 				54BB87D41C4C3C1800DADA1E /* Main.storyboard */,
+				5AC33B001CC54D710011BF5F /* Assessment.swift */,
+				5AC33B021CC54E780011BF5F /* AssessmentTableViewContoller.swift */,
 				54306E131CB1B31A008D9F8E /* LearnMoreTableViewCell.swift */,
 				246C8BA71C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift */,
 				54306E111CB18C40008D9F8E /* LearnMoreInfo.swift */,
@@ -338,10 +338,8 @@
 				5AEC5AB91CBF177B00769042 /* button-4.png in Resources */,
 				5AEC5ABB1CBF177B00769042 /* button.png in Resources */,
 				5A999ADE1C60230700B772BD /* img in Resources */,
-				5A1CF0ED1C5021FA00B9A827 /* checked_checkbox.png in Resources */,
 				5AEC5AB71CBF177B00769042 /* button-2.png in Resources */,
 				5AEC5AB81CBF177B00769042 /* button-3.png in Resources */,
-				5A1CF0EE1C5021FA00B9A827 /* unchecked_checkbox.png in Resources */,
 				5A999ADC1C6022F100B772BD /* video in Resources */,
 				5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */,
 				5AEC5ABA1CBF177B00769042 /* button-5.png in Resources */,
@@ -380,7 +378,9 @@
 				549DCF561C9350FC00F269A1 /* User2.swift in Sources */,
 				549DCE2D1C7A73B800F269A1 /* SignUp2.swift in Sources */,
 				246C8BA81C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift in Sources */,
+				5AC33B011CC54D710011BF5F /* Assessment.swift in Sources */,
 				547473251CA0B415006784AF /* PatientLessonViewController.swift in Sources */,
+				5AC33B031CC54E780011BF5F /* AssessmentTableViewContoller.swift in Sources */,
 				544AD3AB1C70F970004FAD76 /* Exercise.swift in Sources */,
 				544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */,
 				544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */,

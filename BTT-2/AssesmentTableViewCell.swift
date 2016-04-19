@@ -14,7 +14,6 @@ class AssessmentTableViewCell: UITableViewCell {
     //MARK properties
     @IBOutlet weak var btn_check: UIButton!
     @IBOutlet weak var lbl_CheckboxText: UILabel!
-    
     //  @IBOutlet weak var btn_exercise5: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()

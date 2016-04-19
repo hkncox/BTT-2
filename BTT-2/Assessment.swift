@@ -9,9 +9,9 @@
 import Foundation
 class AssesmentData{
     var details: String
-    var section: String
-    init(section: String, details: String){
+    var checked: Bool
+    init(isChecked: Bool, details: String){
         self.details = details
-        self.section = section
+        self.checked = isChecked
     }
 }

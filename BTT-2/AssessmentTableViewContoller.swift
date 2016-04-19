@@ -9,16 +9,15 @@
 import UIKit
 class Assessment: UITableViewController
 {
-    @IBOutlet var btnBack :UIButton?
-    @IBOutlet var btnSignup: UIButton?
-    @IBOutlet weak var tbl_learnMore: UITableView!
+    //@IBOutlet var btnBack :UIButton?
+    @IBOutlet weak var tbl_Assessment: UITableView!
     var assessment = [AssesmentData]()
     var selectedIndexPath: NSIndexPath? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createInfo()
-        btnBack!.layer.cornerRadius = 5
-        btnSignup!.layer.cornerRadius = 5
+        //btnBack!.layer.cornerRadius = 5
+        
     }
     override func viewWillAppear(animated: Bool) {
         
@@ -37,34 +36,31 @@ class Assessment: UITableViewController
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("learnmore") as! LearnMoreTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("assessment") as! AssessmentTableViewCell
         let info: AssesmentData = assessment[indexPath.row]
-        cell.label_title.text = info.section
-        cell.text_details.text = info.details
-        //  cell.text_details.hidden = true
-        cell.label_title.layer.cornerRadius = 5
+        cell.lbl_CheckboxText.text = info.details
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        NSLog("didSelectRowAtIndexPath was called")
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! LearnMoreTableViewCell
-        switch selectedIndexPath {
-        case nil:
-            selectedIndexPath = indexPath
-        // cell.text_details.hidden = false
-        default:
-            if (selectedIndexPath == indexPath ){
-                selectedIndexPath = nil
-                //      cell.text_details.hidden = true
-                
-            } else {
-                selectedIndexPath = indexPath
-                //    cell.text_details.hidden = false
-            }
-        }
-        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        NSLog("didSelectRowAtIndexPath was called")
+//        let cell = tableView.cellForRowAtIndexPath(indexPath) as! LearnMoreTableViewCell
+//        switch selectedIndexPath {
+//        case nil:
+//            selectedIndexPath = indexPath
+//        // cell.text_details.hidden = false
+//        default:
+//            if (selectedIndexPath == indexPath ){
+//                selectedIndexPath = nil
+//                //      cell.text_details.hidden = true
+//                
+//            } else {
+//                selectedIndexPath = indexPath
+//                //    cell.text_details.hidden = false
+//            }
+//        }
+//        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+//    }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let smallHeight: CGFloat = 41.0
         let ip = indexPath

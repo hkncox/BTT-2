@@ -65,49 +65,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-cC-z1X" userLabel="CheckButton">
-                                            <rect key="frame" x="17" y="9" width="26" height="26"/>
-                                            <state key="normal" image="unchecked.png"/>
-                                            <connections>
-                                                <action selector="checkBoxClicked:" destination="rhO-Xd-2Ug" eventType="touchUpInside" id="pLg-Y2-cBO"/>
-                                            </connections>
-                                        </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Text for Checkbox" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-Yj-qGB">
-                                            <rect key="frame" x="51" y="14" width="525" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="525" id="LHG-gK-1zi"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="gG1-a4-hfy">
+                                            <rect key="frame" x="17" y="9" width="564" height="26"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-cC-z1X" userLabel="CheckButton">
+                                                    <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="OeW-6B-UbN"/>
+                                                        <constraint firstAttribute="width" constant="26" id="YMg-Hp-8Eb"/>
+                                                    </constraints>
+                                                    <state key="normal" image="unchecked.png"/>
+                                                    <connections>
+                                                        <action selector="checkBoxClicked:" destination="rhO-Xd-2Ug" eventType="touchUpInside" id="pLg-Y2-cBO"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text for Checkbox" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-Yj-qGB">
+                                                    <rect key="frame" x="39" y="0.0" width="525" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="525" id="LHG-gK-1zi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="MZw-Yj-qGB" secondAttribute="trailing" constant="10" id="0MN-Fr-6g2"/>
-                                        <constraint firstItem="MZw-Yj-qGB" firstAttribute="bottom" secondItem="0rU-cC-z1X" secondAttribute="bottom" id="0Nu-0m-gr7"/>
-                                        <constraint firstItem="MZw-Yj-qGB" firstAttribute="top" secondItem="bE8-0Q-qga" secondAttribute="topMargin" constant="6" id="0jE-hG-ZVT"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="0rU-cC-z1X" secondAttribute="bottom" constant="0.5" id="C2N-2d-N8P"/>
-                                        <constraint firstItem="0rU-cC-z1X" firstAttribute="centerY" secondItem="bE8-0Q-qga" secondAttribute="centerY" id="GK4-12-UhQ"/>
-                                        <constraint firstItem="0rU-cC-z1X" firstAttribute="top" secondItem="bE8-0Q-qga" secondAttribute="topMargin" constant="1" id="GUH-IE-1BY"/>
-                                        <constraint firstItem="MZw-Yj-qGB" firstAttribute="top" secondItem="bE8-0Q-qga" secondAttribute="topMargin" constant="1" id="RNu-yC-0ac"/>
-                                        <constraint firstItem="MZw-Yj-qGB" firstAttribute="leading" secondItem="0rU-cC-z1X" secondAttribute="trailing" constant="10" id="SKK-Oh-GE4"/>
-                                        <constraint firstItem="0rU-cC-z1X" firstAttribute="leading" secondItem="bE8-0Q-qga" secondAttribute="leadingMargin" constant="10" id="d5b-Ge-tbJ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="MZw-Yj-qGB" secondAttribute="trailing" constant="16" id="ktO-TK-Vbf"/>
-                                        <constraint firstItem="MZw-Yj-qGB" firstAttribute="centerY" secondItem="bE8-0Q-qga" secondAttribute="centerY" id="nbI-SE-y3o"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="MZw-Yj-qGB" secondAttribute="bottom" constant="1" id="tFV-O5-ZEy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gG1-a4-hfy" secondAttribute="trailing" constant="10" id="2bs-ig-pIQ"/>
+                                        <constraint firstItem="gG1-a4-hfy" firstAttribute="top" secondItem="bE8-0Q-qga" secondAttribute="topMargin" constant="1" id="3QB-6b-TSo"/>
+                                        <constraint firstItem="gG1-a4-hfy" firstAttribute="centerY" secondItem="bE8-0Q-qga" secondAttribute="centerY" id="5gX-Id-uQ4"/>
+                                        <constraint firstItem="gG1-a4-hfy" firstAttribute="leading" secondItem="bE8-0Q-qga" secondAttribute="leadingMargin" constant="10" id="ROo-7h-hZV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gG1-a4-hfy" secondAttribute="bottom" constant="1" id="dW7-rh-Ng2"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="RNu-yC-0ac"/>
-                                            <exclude reference="ktO-TK-Vbf"/>
-                                            <exclude reference="nbI-SE-y3o"/>
-                                            <exclude reference="tFV-O5-ZEy"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstItem="MZw-Yj-qGB" firstAttribute="width" secondItem="MGK-uD-6JL" secondAttribute="width" id="noF-z1-dxx"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="btn_check" destination="0rU-cC-z1X" id="3Lb-ou-nFz"/>
                                     <outlet property="lbl_CheckboxText" destination="MZw-Yj-qGB" id="kbb-Id-ac7"/>

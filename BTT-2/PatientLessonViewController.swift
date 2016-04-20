@@ -5,7 +5,7 @@ import AVKit
 class PatientLessonViewController: UIViewController {
     
     @IBOutlet weak var lbl_exerciseNum: UILabel!
-    
+    @IBOutlet weak var btn_back: UIButton!
     @IBOutlet weak var lbl_duration: UILabel!
     @IBOutlet weak var lbl_frequency: UILabel!
     @IBOutlet weak var lbl_instructions: UITextView!
@@ -44,15 +44,18 @@ class PatientLessonViewController: UIViewController {
         else{
         lbl_exerciseNum.text = "\(exercise.exerciseNumber) - \(exercise.title)"
         }
+        lbl_instructions.font = UIFont.systemFontOfSize(16)
+        lbl_tips.font = UIFont.systemFontOfSize(16)
+
         lbl_duration.text = "Duration: \(exercise.duration)"
         lbl_frequency.text = "Frequency: \(exercise.frequency)"
         lbl_instructions.text = exercise.instructions
         lbl_tips.text = exercise.tips
         lbl_instructions.layer.cornerRadius = 5
         lbl_tips.layer.cornerRadius = 5
-        //    lbl_instructions.layer.borderColor = [UIColor blackColor].CGColor
+              //    lbl_instructions.layer.borderColor = [UIColor blackColor].CGColor
         btn_playVideo.layer.cornerRadius = 7
-        
+        btn_back.layer.cornerRadius = 5
         
     }
     

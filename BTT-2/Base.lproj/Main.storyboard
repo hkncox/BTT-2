@@ -74,7 +74,7 @@
                                                         <constraint firstAttribute="height" constant="26" id="OeW-6B-UbN"/>
                                                         <constraint firstAttribute="width" constant="26" id="YMg-Hp-8Eb"/>
                                                     </constraints>
-                                                    <state key="normal" image="unchecked.png"/>
+                                                    <state key="normal" image="unchecked.png" backgroundImage="unchecked.png"/>
                                                     <connections>
                                                         <action selector="checkBoxClicked:" destination="rhO-Xd-2Ug" eventType="touchUpInside" id="pLg-Y2-cBO"/>
                                                     </connections>
@@ -1364,15 +1364,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f47-tg-pt4">
-                                <rect key="frame" x="0.0" y="735" width="600" height="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="lQ4-9W-Vhe" kind="show" identifier="backToTable" id="mEc-RJ-llP"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lr2-BD-2CI">
                                 <rect key="frame" x="-20" y="8" width="640" height="738"/>
                                 <subviews>
@@ -1439,7 +1430,7 @@
                                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-vx-vAT">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-vx-vAT">
                                                 <rect key="frame" x="0.0" y="391" width="600" height="125"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1810,15 +1801,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f47-tg-pt4">
+                                <rect key="frame" x="20" y="754" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="p4I-Ou-Ehj"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lQ4-9W-Vhe" kind="show" identifier="backToTable" id="mEc-RJ-llP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="10" id="7x6-cH-2XZ"/>
                             <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="-20" id="8VW-ri-r0b"/>
                             <constraint firstItem="Lr2-BD-2CI" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" id="Hei-Qw-fcc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lr2-BD-2CI" secondAttribute="trailing" id="Mjm-7p-3wf"/>
                             <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="10" id="NeX-7t-CAi"/>
                             <constraint firstItem="Lr2-BD-2CI" firstAttribute="top" secondItem="562-TV-K1w" secondAttribute="topMargin" constant="8" id="Rwc-zJ-1fu"/>
                             <constraint firstItem="Z7A-o4-agp" firstAttribute="top" secondItem="Lr2-BD-2CI" secondAttribute="bottom" id="osb-v5-Igh"/>
+                            <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="10" id="pDK-Ea-9gd"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -1869,13 +1875,13 @@
         <image name="unchecked.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qeP-tR-UEJ"/>
-        <segue reference="El5-NK-g3I"/>
-        <segue reference="47t-cT-LD1"/>
-        <segue reference="Rsk-Gj-wmi"/>
-        <segue reference="rci-ZB-H0q"/>
+        <segue reference="vqb-B8-7hy"/>
         <segue reference="mEc-RJ-llP"/>
         <segue reference="6kD-UB-myk"/>
         <segue reference="zQr-PY-NtM"/>
+        <segue reference="Rsk-Gj-wmi"/>
+        <segue reference="rci-ZB-H0q"/>
+        <segue reference="El5-NK-g3I"/>
+        <segue reference="47t-cT-LD1"/>
     </inferredMetricsTieBreakers>
 </document>

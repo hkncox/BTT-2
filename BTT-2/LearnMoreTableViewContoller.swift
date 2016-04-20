@@ -41,6 +41,7 @@ class learnmore: UITableViewController
         let info: LearnMoreInfo = learnMoreInfo[indexPath.row]
         cell.label_title.text = info.title
         cell.text_details.text = info.details
+        cell.text_details.font = UIFont.systemFontOfSize(16)
       //  cell.text_details.hidden = true
         cell.label_title.layer.cornerRadius = 5
         return cell
@@ -60,6 +61,7 @@ class learnmore: UITableViewController
                 
             } else {
                 selectedIndexPath = indexPath
+             //   cell.detailTextLabel!.font = UIFont.systemFontOfSize(16)
              //    cell.text_details.hidden = false
             }
         }
@@ -70,21 +72,7 @@ class learnmore: UITableViewController
         let ip = indexPath
         if selectedIndexPath != nil {
             if ip == selectedIndexPath! {
-                if ip.row == 0{
-                    return 455.0
-                }
-                if ip.row == 1{
-                    return 200.0
-                }
-                if ip.row == 2{
-                    return 400.0
-                }
-                if ip.row == 3{
-                    return 350.0
-                }
-                else{
-                    return 300.0
-                }
+                return 300.0
                 
             } else {
                 return smallHeight

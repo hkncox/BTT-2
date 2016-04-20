@@ -74,7 +74,6 @@
                                                         <constraint firstAttribute="height" constant="26" id="OeW-6B-UbN"/>
                                                         <constraint firstAttribute="width" constant="26" id="YMg-Hp-8Eb"/>
                                                     </constraints>
-                                                    <state key="normal" image="button-4.png"/>
                                                     <connections>
                                                         <action selector="checkBoxClicked:" destination="rhO-Xd-2Ug" eventType="touchUpInside" id="pLg-Y2-cBO"/>
                                                     </connections>
@@ -1872,7 +1871,6 @@
         <image name="button-2" width="55" height="55"/>
         <image name="button-3" width="55" height="55"/>
         <image name="button-4" width="55" height="55"/>
-        <image name="button-4.png" width="55" height="55"/>
         <image name="button-5" width="55" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>

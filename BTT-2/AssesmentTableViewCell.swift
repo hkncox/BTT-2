@@ -17,6 +17,7 @@ class AssessmentTableViewCell: UITableViewCell {
     //  @IBOutlet weak var btn_exercise5: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+        btn_check.layer.borderColor = UIColor.blackColor().CGColor
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

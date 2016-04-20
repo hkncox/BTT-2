@@ -34,6 +34,8 @@
 		54EB8A091CC1E2BE0005F3C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */; };
 		54EB8A0B1CC2ABFD0005F3C1 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */; };
 		54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0C1CC2ACB30005F3C1 /* Products.swift */; };
+		5A076F7E1CC82B0400DB7455 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A076F7C1CC82B0400DB7455 /* checked_checkbox.png */; };
+		5A076F7F1CC82B0400DB7455 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A076F7D1CC82B0400DB7455 /* unchecked.png */; };
 		5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */; };
 		5A511EDC1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */; };
 		5A511EDE1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A511EDD1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift */; };
@@ -97,6 +99,8 @@
 		54EB8A081CC1E2BE0005F3C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		54EB8A0C1CC2ACB30005F3C1 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		5A076F7C1CC82B0400DB7455 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked_checkbox.png; path = img/checked_checkbox.png; sourceTree = "<group>"; };
+		5A076F7D1CC82B0400DB7455 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unchecked.png; path = img/unchecked.png; sourceTree = "<group>"; };
 		5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coming-Soon.png"; sourceTree = "<group>"; };
 		5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssesmentTableViewCell.swift; sourceTree = "<group>"; };
 		5A511EDD1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				54B0C2711C95F646004E8B85 /* Homepage.swift */,
 				549DCF031C836C4800F269A1 /* Lessons */,
 				54BB87D71C4C3C1800DADA1E /* Assets.xcassets */,
+				5A076F7C1CC82B0400DB7455 /* checked_checkbox.png */,
+				5A076F7D1CC82B0400DB7455 /* unchecked.png */,
 				5AEC5AB21CBF177B00769042 /* button-2.png */,
 				5AEC5AB31CBF177B00769042 /* button-3.png */,
 				5AEC5AB41CBF177B00769042 /* button-4.png */,
@@ -345,11 +351,13 @@
 				5AEC5ABB1CBF177B00769042 /* button.png in Resources */,
 				5A999ADE1C60230700B772BD /* img in Resources */,
 				5AEC5AB71CBF177B00769042 /* button-2.png in Resources */,
+				5A076F7E1CC82B0400DB7455 /* checked_checkbox.png in Resources */,
 				5AEC5AB81CBF177B00769042 /* button-3.png in Resources */,
 				5A999ADC1C6022F100B772BD /* video in Resources */,
 				5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */,
 				5AEC5ABA1CBF177B00769042 /* button-5.png in Resources */,
 				54BB87D81C4C3C1800DADA1E /* Assets.xcassets in Resources */,
+				5A076F7F1CC82B0400DB7455 /* unchecked.png in Resources */,
 				54BB87D61C4C3C1800DADA1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

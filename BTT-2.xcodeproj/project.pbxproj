@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		246C8BA81C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C8BA71C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift */; };
 		54306E121CB18C40008D9F8E /* LearnMoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54306E111CB18C40008D9F8E /* LearnMoreInfo.swift */; };
-		54306E141CB1B31A008D9F8E /* LearnMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54306E131CB1B31A008D9F8E /* LearnMoreTableViewCell.swift */; };
 		544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A21C70F8FA004FAD76 /* LessonTableViewCell.swift */; };
 		544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A41C70F90D004FAD76 /* PatientTableViewController.swift */; };
 		544AD3A71C70F926004FAD76 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3A61C70F926004FAD76 /* LessonViewController.swift */; };
@@ -35,6 +34,8 @@
 		54EB8A0B1CC2ABFD0005F3C1 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */; };
 		54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB8A0C1CC2ACB30005F3C1 /* Products.swift */; };
 		5A1CF0F01C502C0D00B9A827 /* Coming-Soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */; };
+		5A511EDC1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */; };
+		5A511EDE1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A511EDD1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift */; };
 		5A999ADC1C6022F100B772BD /* video in Resources */ = {isa = PBXBuildFile; fileRef = 5A999ADB1C6022F100B772BD /* video */; };
 		5A999ADE1C60230700B772BD /* img in Resources */ = {isa = PBXBuildFile; fileRef = 5A999ADD1C60230700B772BD /* img */; };
 		5AC33B011CC54D710011BF5F /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC33B001CC54D710011BF5F /* Assessment.swift */; };
@@ -66,7 +67,6 @@
 /* Begin PBXFileReference section */
 		246C8BA71C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreTableViewContoller.swift; sourceTree = "<group>"; };
 		54306E111CB18C40008D9F8E /* LearnMoreInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreInfo.swift; sourceTree = "<group>"; };
-		54306E131CB1B31A008D9F8E /* LearnMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreTableViewCell.swift; sourceTree = "<group>"; };
 		544AD3A21C70F8FA004FAD76 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		544AD3A41C70F90D004FAD76 /* PatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewController.swift; sourceTree = "<group>"; };
 		544AD3A61C70F926004FAD76 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +96,8 @@
 		54EB8A0A1CC2ABFD0005F3C1 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		54EB8A0C1CC2ACB30005F3C1 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		5A1CF0EF1C502C0D00B9A827 /* Coming-Soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coming-Soon.png"; sourceTree = "<group>"; };
+		5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssesmentTableViewCell.swift; sourceTree = "<group>"; };
+		5A511EDD1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreTableViewCell.swift; sourceTree = "<group>"; };
 		5A999ADB1C6022F100B772BD /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 		5A999ADD1C60230700B772BD /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		5AC33B001CC54D710011BF5F /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
@@ -185,8 +187,9 @@
 				54BB87D41C4C3C1800DADA1E /* Main.storyboard */,
 				5AC33B001CC54D710011BF5F /* Assessment.swift */,
 				5AC33B021CC54E780011BF5F /* AssessmentTableViewContoller.swift */,
-				54306E131CB1B31A008D9F8E /* LearnMoreTableViewCell.swift */,
+				5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */,
 				246C8BA71C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift */,
+				5A511EDD1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift */,
 				54306E111CB18C40008D9F8E /* LearnMoreInfo.swift */,
 				54B0C2711C95F646004E8B85 /* Homepage.swift */,
 				549DCF031C836C4800F269A1 /* Lessons */,
@@ -369,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54306E141CB1B31A008D9F8E /* LearnMoreTableViewCell.swift in Sources */,
 				54BB87D11C4C3C1800DADA1E /* AppDelegate.swift in Sources */,
 				544AD3AF1C70FF9D004FAD76 /* LessonCreator.swift in Sources */,
 				54B0C2721C95F646004E8B85 /* Homepage.swift in Sources */,
@@ -383,11 +385,13 @@
 				5AC33B031CC54E780011BF5F /* AssessmentTableViewContoller.swift in Sources */,
 				544AD3AB1C70F970004FAD76 /* Exercise.swift in Sources */,
 				544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */,
+				5A511EDC1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift in Sources */,
 				544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */,
 				544AD3A71C70F926004FAD76 /* LessonViewController.swift in Sources */,
 				54B0C2761C9DC5DF004E8B85 /* DatabaseModel.swift in Sources */,
 				54B0C28D1C9F4841004E8B85 /* TherapistTableViewController.swift in Sources */,
 				544AD3AD1C70F9AF004FAD76 /* Week.swift in Sources */,
+				5A511EDE1CC5DA7700BDEF5A /* LearnMoreTableViewCell.swift in Sources */,
 				54EB8A0D1CC2ACB30005F3C1 /* Products.swift in Sources */,
 				54306E121CB18C40008D9F8E /* LearnMoreInfo.swift in Sources */,
 			);

@@ -13,6 +13,9 @@ class Assessment: UITableViewController
     @IBOutlet weak var tbl_Assessment: UITableView!
     var assessment = [AssesmentData]()
     var selectedIndexPath: NSIndexPath? = nil
+    var result: Double = 0.0
+//    @IBOutlet var btn_checkbox: UIButton!
+    var checked: UIImage = UIImage(imageLiteral: "img/checked_checkbox.png")
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createInfo()
@@ -42,9 +45,12 @@ class Assessment: UITableViewController
         cell.lbl_CheckboxText.text = info.details
         return cell
     }
-    
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        NSLog("didSelectRowAtIndexPath was called")
+ //   @IBAction func checkBoxClicked(sender: AnyObject){
+   //     cell.btn_checkbox.setImage(checked, forState: .Normal)
+      //  result += 1
+    //}
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        NSLog("didSelectRowAtIndexPath was called")
 //        let cell = tableView.cellForRowAtIndexPath(indexPath) as! LearnMoreTableViewCell
 //        switch selectedIndexPath {
 //        case nil:
@@ -62,34 +68,9 @@ class Assessment: UITableViewController
 //        }
 //        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
 //    }
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let smallHeight: CGFloat = 41.0
-        let ip = indexPath
-        if selectedIndexPath != nil {
-            if ip == selectedIndexPath! {
-                if ip.row == 0{
-                    return 455.0
-                }
-                if ip.row == 1{
-                    return 200.0
-                }
-                if ip.row == 2{
-                    return 400.0
-                }
-                if ip.row == 3{
-                    return 350.0
-                }
-                else{
-                    return 300.0
-                }
-                
-            } else {
-                return smallHeight
-                
-            }
-        } else {
-            return smallHeight
-        }
+   /// override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+   //
+    //}
     }
     func createInfo(){
         assessment.append(AssesmentData(isChecked: false, details: "Prolonged use of artificial nipples (pacifiers, bottles, sippy cups)"))
@@ -142,4 +123,12 @@ class Assessment: UITableViewController
         assessment.append(AssesmentData(isChecked: false, details: "Extraneous facial, head, or jaw movement during swallow"))
         
     }
+   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "assessmentResults")
+        {
+            let viewController : AssessmentResultsViewController = segue.destinationViewController as! AssessmentResultsViewController
+            result = result/Double(assessment.count)
+            viewController.results = result
+        }
+    }*/
 }

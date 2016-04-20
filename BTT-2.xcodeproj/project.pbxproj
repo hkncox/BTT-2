@@ -16,6 +16,7 @@
 		544AD3AD1C70F9AF004FAD76 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3AC1C70F9AF004FAD76 /* Week.swift */; };
 		544AD3AF1C70FF9D004FAD76 /* LessonCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AD3AE1C70FF9D004FAD76 /* LessonCreator.swift */; };
 		547473251CA0B415006784AF /* PatientLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547473241CA0B415006784AF /* PatientLessonViewController.swift */; };
+		549112F91CC704470078964D /* AssessmentResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549112F81CC704470078964D /* AssessmentResultsViewController.swift */; };
 		549DCE2D1C7A73B800F269A1 /* SignUp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCE2C1C7A73B800F269A1 /* SignUp2.swift */; };
 		549DCF051C83744900F269A1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCF041C83744900F269A1 /* LogInViewController.swift */; };
 		549DCF541C934D8300F269A1 /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549DCF531C934D8300F269A1 /* DatabaseModel.swift */; };
@@ -74,6 +75,7 @@
 		544AD3AC1C70F9AF004FAD76 /* Week.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Week.swift; path = ../Week.swift; sourceTree = "<group>"; };
 		544AD3AE1C70FF9D004FAD76 /* LessonCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LessonCreator.swift; path = ../LessonCreator.swift; sourceTree = "<group>"; };
 		547473241CA0B415006784AF /* PatientLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientLessonViewController.swift; sourceTree = "<group>"; };
+		549112F81CC704470078964D /* AssessmentResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentResultsViewController.swift; sourceTree = "<group>"; };
 		549DCE2C1C7A73B800F269A1 /* SignUp2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUp2.swift; path = ../SignUp2.swift; sourceTree = "<group>"; };
 		549DCF041C83744900F269A1 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../LogInViewController.swift; sourceTree = "<group>"; };
 		549DCF531C934D8300F269A1 /* DatabaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseModel.swift; path = "BTT-2UITests/DatabaseModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -186,6 +188,7 @@
 				54BB87D01C4C3C1800DADA1E /* AppDelegate.swift */,
 				54BB87D41C4C3C1800DADA1E /* Main.storyboard */,
 				5AC33B001CC54D710011BF5F /* Assessment.swift */,
+				549112F81CC704470078964D /* AssessmentResultsViewController.swift */,
 				5AC33B021CC54E780011BF5F /* AssessmentTableViewContoller.swift */,
 				5A511EDB1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift */,
 				246C8BA71C6BFFE900A899B5 /* LearnMoreTableViewContoller.swift */,
@@ -385,6 +388,7 @@
 				5AC33B031CC54E780011BF5F /* AssessmentTableViewContoller.swift in Sources */,
 				544AD3AB1C70F970004FAD76 /* Exercise.swift in Sources */,
 				544AD3A51C70F90D004FAD76 /* PatientTableViewController.swift in Sources */,
+				549112F91CC704470078964D /* AssessmentResultsViewController.swift in Sources */,
 				5A511EDC1CC5D59C00BDEF5A /* AssesmentTableViewCell.swift in Sources */,
 				544AD3A31C70F8FA004FAD76 /* LessonTableViewCell.swift in Sources */,
 				544AD3A71C70F926004FAD76 /* LessonViewController.swift in Sources */,

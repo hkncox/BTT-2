@@ -66,10 +66,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="gG1-a4-hfy">
-                                            <rect key="frame" x="17" y="9" width="564" height="26"/>
+                                            <rect key="frame" x="17" y="9" width="564" height="129"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-cC-z1X" userLabel="CheckButton">
-                                                    <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="26" height="129"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="26" id="OeW-6B-UbN"/>
                                                         <constraint firstAttribute="width" constant="26" id="YMg-Hp-8Eb"/>
@@ -80,7 +80,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Text for Checkbox" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-Yj-qGB">
-                                                    <rect key="frame" x="39" y="0.0" width="525" height="26"/>
+                                                    <rect key="frame" x="39" y="0.0" width="525" height="129"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="525" id="LHG-gK-1zi"/>
                                                     </constraints>
@@ -791,17 +791,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMt-JI-Wq9">
-                                <rect key="frame" x="480" y="28" width="100" height="33"/>
-                                <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="V5Q-jY-gMr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wol-sR-Bw4"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="RESULTS GO HERE!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Of-8x-P0A">
                                 <rect key="frame" x="20" y="198" width="565" height="128"/>
@@ -815,6 +807,20 @@
                                 <color key="textColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMt-JI-Wq9">
+                                <rect key="frame" x="480" y="28" width="100" height="33"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="V5Q-jY-gMr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3ty-f9-OOi" kind="show" id="MHC-bX-rHt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1873,16 +1879,16 @@
         <image name="button-3" width="55" height="55"/>
         <image name="button-4" width="55" height="55"/>
         <image name="button-5" width="55" height="55"/>
-        <image name="unchecked.png" width="700" height="300"/>
+        <image name="unchecked.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vqb-B8-7hy"/>
         <segue reference="mEc-RJ-llP"/>
         <segue reference="6kD-UB-myk"/>
         <segue reference="zQr-PY-NtM"/>
-        <segue reference="Rsk-Gj-wmi"/>
-        <segue reference="rci-ZB-H0q"/>
+        <segue reference="vqb-B8-7hy"/>
         <segue reference="El5-NK-g3I"/>
         <segue reference="47t-cT-LD1"/>
+        <segue reference="MHC-bX-rHt"/>
+        <segue reference="wol-sR-Bw4"/>
     </inferredMetricsTieBreakers>
 </document>

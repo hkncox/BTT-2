@@ -44,7 +44,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gfs-Te-F4O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ker-Ir-Hrg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="QrA-Wo-6P8">
@@ -188,53 +188,48 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="106"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="400" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-Te-3RZ">
-                                    <rect key="frame" x="14" y="24" width="580" height="32"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-D2-d1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="95" height="32"/>
-                                            <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="85" id="E1p-AR-pIA"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <state key="normal" title="Add User">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="abL-98-XJ4" kind="show" identifier="segue_addUser" id="maj-lz-WTC"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
-                                            <rect key="frame" x="495" y="0.0" width="85" height="32"/>
-                                            <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="85" id="lr2-eo-3sV"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <state key="normal" title="Log Out">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="tHk-ti-3dI" kind="show" id="qeP-tR-UEJ"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </stackView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tongue Thrust Treatment Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-9r-LZx">
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-DL-etn">
+                                    <rect key="frame" x="485" y="22" width="107" height="32"/>
+                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="twl-ij-VtC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="Log Out">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="tHk-ti-3dI" kind="show" id="qeP-tR-UEJ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tongue Thrust Treatment Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-9r-LZx">
                                     <rect key="frame" x="142" y="72" width="317" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-D2-d1h">
+                                    <rect key="frame" x="16" y="22" width="95" height="32"/>
+                                    <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="zU2-wl-v7T"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="Add User">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="abL-98-XJ4" kind="show" identifier="segue_addUser" id="maj-lz-WTC"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="Oro-9r-LZx" firstAttribute="top" secondItem="V6r-Te-3RZ" secondAttribute="bottom" constant="15" id="6zn-xZ-KU7"/>
-                                <constraint firstItem="V6r-Te-3RZ" firstAttribute="top" secondItem="gWA-hT-Ge7" secondAttribute="top" constant="24" id="TE9-do-sDz"/>
+                                <constraint firstItem="07G-D2-d1h" firstAttribute="top" secondItem="gWA-hT-Ge7" secondAttribute="top" constant="20" id="E0H-JZ-KMQ"/>
                                 <constraint firstItem="Oro-9r-LZx" firstAttribute="centerX" secondItem="gWA-hT-Ge7" secondAttribute="centerX" id="UJR-Be-nir"/>
-                                <constraint firstAttribute="trailing" secondItem="V6r-Te-3RZ" secondAttribute="trailing" constant="10" id="n0P-Yn-gvK"/>
-                                <constraint firstItem="V6r-Te-3RZ" firstAttribute="leading" secondItem="gWA-hT-Ge7" secondAttribute="leading" constant="10" id="p8X-DN-LNx"/>
+                                <constraint firstItem="SDO-DL-etn" firstAttribute="top" secondItem="gWA-hT-Ge7" secondAttribute="top" constant="20" id="bVa-nD-73d"/>
+                                <constraint firstItem="07G-D2-d1h" firstAttribute="leading" secondItem="gWA-hT-Ge7" secondAttribute="leading" constant="10" id="dLg-CG-BN8"/>
+                                <constraint firstAttribute="trailing" secondItem="SDO-DL-etn" secondAttribute="trailing" constant="10" id="f9c-v6-kqA"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -359,7 +354,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAF-8S-slA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2216" y="255"/>
+            <point key="canvasLocation" x="-2215" y="203"/>
         </scene>
         <!--Lesson View Controller-->
         <scene sceneID="GYr-Cv-oe6">
@@ -717,25 +712,25 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-cB-YtQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="194"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-9v-fLF">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-9v-fLF">
                                                         <rect key="frame" x="57" y="0.0" width="88" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-Dx-UjL">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-Dx-UjL">
                                                         <rect key="frame" x="58" y="46" width="87" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz6-eb-0uc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz6-eb-0uc">
                                                         <rect key="frame" x="36" y="89" width="108" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Create Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-7E-KNg">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-7E-KNg">
                                                         <rect key="frame" x="10" y="131" width="134" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1406,6 +1401,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="uPb-e9-228"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7YE-QI-edD">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1414,6 +1412,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <segue destination="Bpo-JX-XFs" kind="show" id="95e-fD-qR9"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1433,6 +1434,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="sEU-kE-wE5"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HMO-mF-In8">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1441,6 +1445,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="4P3-91-cq9"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jAH-Z8-mnz">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1449,6 +1456,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="5V1-3E-MKa"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1468,6 +1478,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <segue destination="Bpo-JX-XFs" kind="show" id="dpm-mW-EmM"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KRS-XA-VhZ">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1476,6 +1489,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="OoE-NQ-JEs"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZHV-mw-2F7">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1484,8 +1500,14 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="u39-YD-epf"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Sji-6D-X9s" secondAttribute="width" id="b1Y-u9-1fk"/>
+                                                                </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X0n-hX-8gc">
                                                                 <rect key="frame" x="207" y="0.0" width="49" height="120"/>
@@ -1503,6 +1525,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="3FZ-cz-Wka"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hz0-A5-DUY">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1511,6 +1536,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="Rel-9Q-D15"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yib-1e-AK6">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1519,6 +1547,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="fWH-ZP-pJS"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1538,6 +1569,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="Znr-ra-Lpt"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-sc-GOT">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1546,6 +1580,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="1C2-cz-pbF"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-xF-dFh">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1554,6 +1591,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="WGH-iU-0d6"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1573,6 +1613,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="ppt-VX-70d"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-cX-vei">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1581,6 +1624,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="Hz0-1b-GIR"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v8y-dC-oz8">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1589,6 +1635,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="wqa-Nl-Qby"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1608,6 +1657,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="HXv-D0-Hea"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CkX-Az-aq7">
                                                                         <rect key="frame" x="0.0" y="59" width="49" height="29"/>
@@ -1616,6 +1668,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="TDi-Ux-KhV"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-eW-Qym">
                                                                         <rect key="frame" x="0.0" y="92" width="49" height="29"/>
@@ -1624,6 +1679,9 @@
                                                                             <segment title="Y"/>
                                                                         </segments>
                                                                         <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <connections>
+                                                                            <action selector="indexChanged:" destination="Bpo-JX-XFs" eventType="valueChanged" id="ghU-jw-3jF"/>
+                                                                        </connections>
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
@@ -1665,6 +1723,7 @@
                             <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="-20" id="8VW-ri-r0b"/>
                             <constraint firstItem="Lr2-BD-2CI" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" id="Hei-Qw-fcc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lr2-BD-2CI" secondAttribute="trailing" id="Mjm-7p-3wf"/>
+                            <constraint firstItem="f47-tg-pt4" firstAttribute="leading" secondItem="562-TV-K1w" secondAttribute="leadingMargin" constant="10" id="NeX-7t-CAi"/>
                             <constraint firstItem="Lr2-BD-2CI" firstAttribute="top" secondItem="562-TV-K1w" secondAttribute="topMargin" constant="8" id="Rwc-zJ-1fu"/>
                             <constraint firstItem="Z7A-o4-agp" firstAttribute="top" secondItem="Lr2-BD-2CI" secondAttribute="bottom" id="osb-v5-Igh"/>
                         </constraints>
@@ -1718,9 +1777,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="rci-ZB-H0q"/>
         <segue reference="Rsk-Gj-wmi"/>
-        <segue reference="npM-U3-l4t"/>
         <segue reference="El5-NK-g3I"/>
         <segue reference="47t-cT-LD1"/>
+        <segue reference="qeP-tR-UEJ"/>
         <segue reference="mEc-RJ-llP"/>
         <segue reference="6kD-UB-myk"/>
         <segue reference="zQr-PY-NtM"/>
